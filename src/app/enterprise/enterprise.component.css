@@ -1,0 +1,125 @@
+.Enterprise1
+{
+    background-image: url("src/assets/Enterprises1.jpg");
+    height: 706px;
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    background-attachment: fixed;
+}
+
+
+div#bottomLink {
+    color: rgb(129, 129, 129);
+    padding-top:350px ;
+    padding-bottom: 120px ;
+    border: none;
+    bottom: 60px;
+    font-size: 30px;
+}
+
+i#arrow{
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+i#arrow{
+    
+    transition: all 0.3s ease;
+    animation: block-link-arrow-down 1s infinite;
+    -webkit-animation: block-link-arrow-down 1s infinite;
+    -moz-animation: block-link-arrow-down 1s infinite;
+    display: inline-block;
+    font-size: 16px;
+} @keyframes block-link-arrow-down {
+    0%, 25%, 55%, 75%, 100%
+    {
+        transform: translateY(0);
+    }
+    45% 
+    {
+        transform: translateY(-20px);
+    }
+    65% 
+    {
+        transform: translateY(-10px);
+    }85% 
+    {
+        transform: translateY(-5px);
+    }
+}
+
+#size
+{    
+    background-image: url("src/assets/size.png");
+     background-position: center;
+    background-size: 180%;
+    height: 300px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    transition: 0.3s ease;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+#design
+{
+    background-image: url("src/assets/design.png");
+     background-position: center;
+    background-size: 180%;
+    height: 300px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    transition: 0.3s ease;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+#team
+{
+    background-image: url("src/assets/team.png");
+    background-position: center;
+   background-size: 180%;
+   height: 300px;
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0px;
+   transition: 0.3s ease;
+   transition-property: all;
+   transition-duration: 0.3s;
+   transition-timing-function: ease;
+   transition-delay: 0s;
+}
+
+#team:hover
+{
+    scale: 90%;
+}
+
+#size:hover
+{
+    scale: 90%;
+}
+#design:hover
+{
+    scale: 90%;
+}
