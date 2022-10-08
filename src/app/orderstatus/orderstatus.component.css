@@ -1,0 +1,29 @@
+
+ .col-lg-1{ 
+    content: "";
+    /* position: absolute; */
+    width: 1px;
+    height: 275px;
+    border-right: 1px solid #000;
+    /* left: 0; */
+ } 
+ /*.dflex { 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    justify-content: center;
+    background: #e1e1e1;
+    color: #000 !important;
+ } 
+.col-lg-6{ 
+     align-items: flex-end; 
+ } */
+h2{
+    src: url(http://fonts.googleapis.com/css?family=Ubuntu);
+    font-family: "Ubuntu";
+    /* align-items: flex-end; */
+    align-items: flex-end;
+    justify-content: end;
+    /* align-items: flex-end; */
+}
