@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 
 import { CollegeComponent } from './college/college.component';
+
+import { NotesInfoComponent } from './notes-info/notes-info.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 
 import { SignupComponent } from './signup/signup.component';
@@ -26,6 +28,11 @@ import { OrderstatusComponent } from './orderstatus/orderstatus.component';
     CollegeComponent,
     EnterpriseComponent,
     SignupComponent,
+  
+    CollegeComponent,
+    EnterpriseComponent,
+
+
     LoginComponent,
     ForgotpasswordComponent,
     OrderstatusComponent

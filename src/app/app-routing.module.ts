@@ -22,8 +22,6 @@ const routes: Routes = [
   {path:'forgotpass',component:ForgotpasswordComponent},
   {path:'orderstatus',component:OrderstatusComponent},
 
-
-
 ];
 
 @NgModule({
