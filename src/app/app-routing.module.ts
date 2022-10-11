@@ -8,6 +8,8 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { OrderstatusComponent } from './orderstatus/orderstatus.component';
+import { NotesInfoComponent } from './notes-info/notes-info.component';
+import { NotesComponent } from './notes/notes.component';
 
 
 
@@ -21,6 +23,8 @@ const routes: Routes = [
   {path:'signup',component:SignupComponent},
   {path:'forgotpass',component:ForgotpasswordComponent},
   {path:'orderstatus',component:OrderstatusComponent},
+  {path:'noteinfo',component:NotesInfoComponent},
+  {path:'note',component:NotesComponent},
 
 ];
 

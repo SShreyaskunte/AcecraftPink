@@ -16,6 +16,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { OrderstatusComponent } from './orderstatus/orderstatus.component';
+import { NotesComponent } from './notes/notes.component';
 
 
 
@@ -35,7 +36,8 @@ import { OrderstatusComponent } from './orderstatus/orderstatus.component';
 
     LoginComponent,
     ForgotpasswordComponent,
-    OrderstatusComponent
+    OrderstatusComponent,
+    NotesComponent
     
 
   ],
