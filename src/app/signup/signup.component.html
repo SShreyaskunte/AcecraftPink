@@ -1,0 +1,46 @@
+<div class="container mt-5" style="border: 1px solid #f1f1f1; min-height: 100vh;">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3 d-flex flex-column">
+        <div class="login-box">
+           
+            <form class="mt-2" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                <h3 class="text-center secondary" style="color:#978f8f; font-size: 32px; font-family:Ubuntu;">Signup With Acecraft</h3>
+                <div class="form-group pt-2">
+                    <input type="text" class="form-control" name="fname" formControlName="fname" placeholder="Student First Name">
+                    <strong class="error ng-binding" *ngIf="submitted && f['fname'].errors?.['required']">First Name required</strong>
+                </div>
+                <div class="form-group pt-3">
+                    <input type="text" class="form-control" name="lname" formControlName="lname" placeholder="Student Last Name">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['lname'].errors?.['required']">Last Name required</strong>
+                   
+                </div>
+                <div class="form-group pt-3">
+                    <input type="email" class="form-control" name="Email" formControlName="email" placeholder="Email">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['email'].errors?.['required']">Email required</strong>
+                    <strong class="error ng-binding" *ngIf=" submitted && f['email'].errors?.['pattern']">Enter Valid Email</strong>
+                </div>
+                <div class="form-group pt-3">
+                    <input type="password" class="form-control" name="Password" formControlName="password" placeholder="Password">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['password'].errors?.['required']">Password required</strong>
+                    <strong class="error ng-binding" *ngIf=" submitted && f['password'].errors?.['minlength']">Min. Length is 6 characters</strong>
+                </div>
+                <div class="form-group pt-3">
+                    <input type="password" class="form-control" name="Confirm" formControlName="confpassword" placeholder="Confirm Password">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['confpassword'].errors?.['required']">Password required</strong>
+                    <strong class="error ng-binding" *ngIf=" submitted && f['confpassword'].errors?.['minlength']">Min. Length is 6 characters</strong>
+                    <!-- <strong class="error ng-binding" *ngIf="f['confpassword'].errors?.['mustMatch']">Password and confirm not match</strong> -->
+                </div>
+                <div class="form-group pt-3">
+                    <input type="text" class="form-control" name="Parent" formControlName="pname" placeholder="Parent Name">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['pname'].errors?.['required']">Parent Name required</strong>
+                </div>
+                <div class="form-group pt-3">
+                    <input type="number" class="form-control" name="Admission" formControlName="adno" placeholder="Admission Number">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['adno'].errors?.['required']">Admission No. required</strong>
+                </div>
+                <button class="btn btn-dark mt-3 w-100" type="submit">Register</button>   
+                <div class="text-center text-secondary mt-3" style="font-size: 13px;">Already Have An Account?<span><a class="text-secondary" href="login">Login</a></span></div>  
+            </form>
+        </div>
+    </div>
+
+</div>

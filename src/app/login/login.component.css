@@ -1,0 +1,27 @@
+.login-box{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #d3d3d3;
+    min-height: 510px; 
+    
+}
+:placeholder-shown{
+    font-size: 15px;
+   
+}
+strong{
+    color:red;
+}
+.form-group input{
+    border: 1px solid #ccc;
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .col-lg-4{
+        margin-left: 25%;
+    }
+}
+@media screen and (min-width:1200px){
+    .col-lg-4{
+        margin-left: 33.33333333%;
+    }
+}
