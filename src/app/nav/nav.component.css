@@ -27,3 +27,8 @@ i.fas {
 element.style {
     color: white;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+ i.fa { font-family: 'FontAwesome' !important; }
