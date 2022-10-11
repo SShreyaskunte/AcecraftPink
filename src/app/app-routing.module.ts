@@ -14,6 +14,8 @@ import { AddressBookComponent } from './address-book/address-book.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
+import { NotesInfoComponent } from './notes-info/notes-info.component';
+import { NotesComponent } from './notes/notes.component';
 
 
 
@@ -32,7 +34,9 @@ const routes: Routes = [
   {path:'acc_track',component:AccOrdertrackComponent},
   {path:'address_book',component:AddressBookComponent},
   {path:'wallet',component:WalletComponent},
-  {path:'order_history',component:OrderHistoryComponent}
+  {path:'order_history',component:OrderHistoryComponent},
+  {path:'noteinfo',component:NotesInfoComponent},
+  {path:'note',component:NotesComponent},
 
 ];
 

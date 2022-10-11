@@ -24,6 +24,7 @@ import { AddressBookComponent } from './address-book/address-book.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
+import { NotesComponent } from './notes/notes.component';
 
 
 
@@ -43,7 +44,8 @@ import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.componen
     AddressBookComponent,
     OrderHistoryComponent,
     WalletComponent,
-    AccOrdertrackComponent
+    AccOrdertrackComponent,
+    NotesComponent
     
 
   ],

@@ -1,9 +1,9 @@
 
 
 
-<p id="pp" class="text-center ms-mt-x"><span class="ng-binding">Nov 16, 2019</span></p>
+<p id="para" class="text-center ms-mt-x" ><span class="ng-binding" style="color: #000000;">Nov 16, 2019</span></p>
 
-<h1 class="ms-mt-m text-center ng-binding">Styling accessories that complement your formal wear</h1>
+<h1 class="ms-mt-m text-center ng-binding" style="color: #000000;">Styling accessories that complement your formal wear</h1>
 
 <p ng-bind-html-unsafe="detail.content" class="ms-fs-14 ng-binding" style="word-wrap: break-word; max-width: 800px; margin: auto;">
     <div class="container" style="max-width: 800px;">
@@ -48,4 +48,57 @@
         <p></p>
         <p><span style="font-weight: 400;">&nbsp;</span></p>
     </div>
+<br><br>
+<hr style="height: 1px;color:#978f8f79">
+<br>
+<div>
+    <h3 style="color: #978F8F;margin-left:5em; font-family:'proxima';font-size:27px;">0
+        <span>Comment</span>
+    </h3><br>
+</div>
 
+<hr style="height: 1px;color:#978f8f79">
+<br>
+<h3 style="color: #978F8F;margin-left:5em; font-family:'proxima';font-size:27px;">0
+    <span>Leave a Comment</span>
+</h3>
+<br>
+
+<div style="margin-left: 9em;">
+    <form class="form-horizontal ng-scope ms-widget ng-pristine ng-valid ng-valid-email" name="blogform2" ms-success="ms.widgets.getComment.loadComments()" data-ng-name="ms+++form+++addBlogComment" ms-widgetname="ms.form.addBlogComment" data-ng-controller="ms_theme.controllers.ms+++form+++addBlogComment" ms-widgetid="ms-widget-106" id="ms-widget-106" style="">
+
+        <!-- ngIf: type=='error' -->
+        <!-- ngIf: type=='success' -->
+        <br>
+        <label class="ng-binding"><b>Name</b></label>
+
+        <div class="row ms-mb-m ">
+            <div class="col-md-7 col-md-offset-0">
+                <input type="text" name="username" class="form-control ng-pristine ng-untouched ng-valid" id="name" placeholder="Name" ng-model="user_name">
+            </div>
+        </div>
+        <br>
+        <label class="ng-binding"><b>Email</b></label>
+
+        <div class="row ms-mb-m ">
+            <div class="col-md-7 col-md-offset-0">
+                <input class="form-control ng-pristine ng-untouched ng-valid ng-valid-email" type="email" name="email2" id="inputEmail5" placeholder="Email" ng-model="user_email" style="">
+               
+            </div>
+        </div>
+        <br>
+        <label class="ng-binding"><b>Message</b></label>
+
+        <div class="row ms-mb-m ">
+            <div class="col-md-7 col-md-offset-0">
+                <textarea name="password" class="form-control ng-pristine ng-untouched ng-valid" rows="3" id="comment" placeholder="Your Comment" ng-model="comment"></textarea>
+            </div>
+        </div> <br>
+        <p class="ms-mt-m">
+            <button  type="submit" ng-click="submit(detail)">Post
+                Comment
+            </button>
+        </p>
+
+    </form>
+</div>
