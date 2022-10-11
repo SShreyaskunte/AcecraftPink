@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin1234",
+      "mobile": "9898989898",
+      "id": 1
+    },
+    {
+      "fname": "abcd",
+      "lname": "efgh",
+      "email": "abc@gmail.com",
+      "password": "abc1234",
+      "confpassword": "abc1234",
+      "pname": "hjki",
+      "adno": 1234567,
+      "id": 2
+    },
+    {
+      "fname": "Sachin",
+      "lname": "Krishna",
+      "email": "abcdef@gmail.com",
+      "password": "sachin",
+      "confpassword": "sachin",
+      "pname": "ghjkjh",
+      "adno": 345678,
+      "id": 3
+    },
+    {
+      "fname": "Shreyas",
+      "lname": "Kunte",
+      "email": "shreyas@gmail.com",
+      "password": "shreyas1234",
+      "confpassword": "shreyas1234",
+      "pname": "Abcd",
+      "adno": 12345,
+      "id": 4
+    }
+  ]
+}
