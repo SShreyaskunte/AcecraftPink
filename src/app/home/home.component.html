@@ -2,6 +2,201 @@
     <div>
         <img src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Home-1.jpg" style="width: 1270px ;">
         <i class="fa-solid fa-bag-shopping"></i>
+<style>
+    *body {
+        background-color: #000000;
+    }
+
+    #intro {
+        background-image: url("http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Home-1.jpg");
+        background-size: cover;
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height: 600px;
+    }
+
+    .proximaBold {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    div.absolute {
+        margin-top: 24em;
+        margin-left: 30em;
+
+        height: 100px;
+        width: 350px;
+        bottom: 10px;
+        border: 1px solid white;
+
+
+    }
+
+    .bottomLink {
+        margin-left: 34em;
+        color: white;
+    }
+
+    p {
+        font-family: 'proximaBold';
+        font-size: 34px;
+        color: #978F8F;
+    }
+
+    .column1 {
+
+        float: left;
+        margin-left: 3em;
+        width: 46%;
+        height: 50%;
+        padding: 4px;
+    }
+
+    .column {
+        float: left;
+        margin-right: 1.5em;
+        width: 47%;
+        height: 44%;
+        padding: 4px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .row {
+        position: relative;
+        text-align: center;
+
+    }
+
+    div.absolute1 {
+        position: absolute;
+        z-index: 9;
+        margin-left: 6em;
+        margin-bottom: 5em;
+
+        height: 100px;
+        width: 350px;
+        bottom: 10px;
+        border: 1px solid white;
+
+
+    }
+
+    div.absolute2 {
+        position: absolute;
+        z-index: 9;
+        margin-left: 9em;
+        margin-bottom: 5em;
+
+        height: 100px;
+        width: 350px;
+        bottom: 10px;
+        border: 1px solid white;
+
+
+    }
+
+    .bottomLink1 {
+        position: absolute;
+        z-index: 9;
+        margin-left: -25em;
+        margin-top: 30em;
+        color: white;
+    }
+
+    .bottomLink2 {
+        position: absolute;
+        z-index: 9;
+        margin-left: -22em;
+        margin-top: 30em;
+        color: white;
+    }
+    .column1  img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+    .column1:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.column  img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+</style>
+
+
+
+
+
+<div style="background-color: #000000;">
+
+    <div id="intro">
+        <div class="parent">Choose Class
+            <div class="absolute">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Class<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>over
+                        the common.</strong></p>
+            </div>
+
+        </div>
+        <br>
+        <a class="bottomLink" href="/page/college">
+            <span class="link">ACECRAFT FOR COLLEGES</span>
+            <i class="fas fa-chevron-right"></i>
+        </a>
     </div>
-    
+
+
+
+
+
+    <div class="row ">
+        <div class="column1" style="overflow: hidden;">
+            <img src="assets/col11.jpg" alt="Snow" style="width:100%">
+            <div class="absolute1">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Grade<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>over
+                        of Greatness.</strong></p>
+            </div>
+
+            <a class="bottomLink1" href="/page/college">
+                <span class="link">ACECRAFT FOR SCHOOLS</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+        </div>
+        <div class="column">
+            <img src="assets/col22.jpg" alt="Forest" style="width:100%">
+            <div class="absolute2">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Workwear<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>over
+                        Readefined.</strong></p>
+            </div>
+
+            <a class="bottomLink2" href="/page/college">
+                <span class="link">ACECRAFT FOR ENTERPRISE</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
 </div>

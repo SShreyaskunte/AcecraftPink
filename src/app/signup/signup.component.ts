@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 import { FormBuilder} from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
@@ -12,6 +14,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  userurl = environment.userapi;
   registerForm = new FormGroup({
     fname: new FormControl(''),
     lname: new FormControl(''),
@@ -24,7 +27,7 @@ export class SignupComponent implements OnInit {
     // mobile: new FormControl('')
   })
 
-  constructor(private formBuilder: FormBuilder, private router:Router) { }
+  constructor(private formBuilder: FormBuilder,private http: HttpClient, private router:Router) { }
   submitted = false;
 
   ngOnInit(): void {
@@ -69,20 +72,25 @@ export class SignupComponent implements OnInit {
       if (this.registerForm.invalid) {
         return;
       }
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
+      this.http.post<any>(this.userurl, this.registerForm.value)
+      .subscribe(res => {
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        })
+    
+        Toast.fire({
+          icon: 'success',
+          title: 'Sign Up Successful'
+        })
+        this.registerForm.reset();
+        this.router.navigate(['login']);
       })
 
-      Toast.fire({
-        icon: 'success',
-        title: 'Signed Up Successfully!!!'
-      })
-      this.registerForm.reset();
-      this.router.navigate(['login']);
+      
     }
 
 }

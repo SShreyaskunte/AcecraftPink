@@ -1,0 +1,16 @@
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a {
+    background: transparent;
+}
+body a {
+    color: #fff;
+}
+a, a i, a span, a:hover, button, button i {
+    cursor: pointer !important;
+}
+
+
