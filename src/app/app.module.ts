@@ -1,27 +1,63 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 import { NavComponent } from './nav/nav.component';
-import { BodyComponent } from './body/body.component';
 import { SchoolComponent } from './school/school.component';
+
 import { CollegeComponent } from './college/college.component';
+
+import { NotesInfoComponent } from './notes-info/notes-info.component';
+import { EnterpriseComponent } from './enterprise/enterprise.component';
+
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { OrderstatusComponent } from './orderstatus/orderstatus.component';
+import { AccountComponent } from './account/account.component';
+import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { AddressBookComponent } from './address-book/address-book.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
+import { WalletComponent } from './wallet/wallet.component';
+import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
+import { NotesComponent } from './notes/notes.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavComponent,
-    BodyComponent,
     SchoolComponent,
-    CollegeComponent
+    CollegeComponent,
+    SignupComponent,
+    CollegeComponent,
+    EnterpriseComponent,
+    LoginComponent,
+    ForgotpasswordComponent,
+    OrderstatusComponent,
+    AccountComponent,
+    PersonalInfoComponent,
+    AddressBookComponent,
+    OrderHistoryComponent,
+    WalletComponent,
+    AccOrdertrackComponent,
+    NotesComponent
+    
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

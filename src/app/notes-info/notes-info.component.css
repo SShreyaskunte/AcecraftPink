@@ -1,0 +1,24 @@
+#para {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+ 
+}
+.ng-binding{
+    color: #978F9F;
+}
+button{
+    background: #555555;
+    padding: 6px 12px;
+}
+button {
+    width: 100%;
+    border-radius: 30px;
+    border-width: 3px;
+    border-color: grey;
+    color: white;
+}
