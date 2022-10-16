@@ -5,9 +5,9 @@
             <form class="mt-2" [formGroup]="loginForm" (ngSubmit)="login()">
                 <h3 class="text-center secondary" style="color:#978f8f; font-size: 32px; font-family:Ubuntu;">Login With Acecraft</h3>
                 <div class="form-group pt-2">
-                    <input type="email" class="form-control" name="Email" formControlName="email" placeholder="Username">
-                    <strong class="error ng-binding" *ngIf=" submitted && f['email'].errors?.['required']">Email required</strong>
-                    <strong class="error ng-binding" *ngIf=" submitted && f['email'].errors?.['pattern']">Enter Valid Email</strong>
+                    <input type="email" class="form-control" name="Email" formControlName="useremail" placeholder="Username">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['useremail'].errors?.['required']">Email required</strong>
+                    <strong class="error ng-binding" *ngIf=" submitted && f['useremail'].errors?.['pattern']">Enter Valid Email</strong>
                 </div>
                 <div class="form-group pt-3">
                     <input type="password" class="form-control" name="Password" formControlName="password" placeholder="Password">
