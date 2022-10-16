@@ -26,6 +26,7 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
 import { NotesComponent } from './notes/notes.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
 
 
 
@@ -48,7 +49,8 @@ import { NotesComponent } from './notes/notes.component';
     OrderHistoryComponent,
     WalletComponent,
     AccOrdertrackComponent,
-    NotesComponent
+    NotesComponent,
+    CartItemsComponent
     
 
   ],

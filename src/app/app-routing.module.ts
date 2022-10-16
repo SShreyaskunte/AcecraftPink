@@ -16,7 +16,8 @@ import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
 import { NotesInfoComponent } from './notes-info/notes-info.component';
 import { NotesComponent } from './notes/notes.component';
-
+import { CartItemsComponent } from './cart-items/cart-items.component';
+import { CounterComponent } from './counter/counter.component';
 
 
 
@@ -37,6 +38,7 @@ const routes: Routes = [
   {path:'order_history',component:OrderHistoryComponent},
   {path:'noteinfo',component:NotesInfoComponent},
   {path:'note',component:NotesComponent},
+  {path:'cart',component:CartItemsComponent}
 
 ];
 
