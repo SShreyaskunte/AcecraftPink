@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CollegeComponent } from './college/college.component';
 import { HomeComponent } from './home/home.component';
+import { SchoolComponent } from './school/school.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
@@ -16,6 +17,9 @@ import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
 import { NotesInfoComponent } from './notes-info/notes-info.component';
 import { NotesComponent } from './notes/notes.component';
+import { UniformsComponent } from './uniforms/uniforms.component';
+
+
 import { CartItemsComponent } from './cart-items/cart-items.component';
 import { CounterComponent } from './counter/counter.component';
 
@@ -25,6 +29,8 @@ import { CounterComponent } from './counter/counter.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'college',component:CollegeComponent},
+
+  {path:'school',component:SchoolComponent},
   {path: 'enterprise', component:EnterpriseComponent},
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
@@ -38,6 +44,7 @@ const routes: Routes = [
   {path:'order_history',component:OrderHistoryComponent},
   {path:'noteinfo',component:NotesInfoComponent},
   {path:'note',component:NotesComponent},
+  {path:'uniform',component:UniformsComponent},
   {path:'cart',component:CartItemsComponent}
 
 ];

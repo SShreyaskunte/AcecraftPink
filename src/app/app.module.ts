@@ -9,9 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { NavComponent } from './nav/nav.component';
 
-import { CollegeComponent } from './college/college.component';
 
-import { NotesInfoComponent } from './notes-info/notes-info.component';
+import { CollegeComponent } from './college/college.component';
+import { SchoolComponent } from './school/school.component';
+
+
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 
 import { SignupComponent } from './signup/signup.component';
@@ -25,6 +27,7 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
 import { NotesComponent } from './notes/notes.component';
+import { UniformsComponent } from './uniforms/uniforms.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
 
 
@@ -34,6 +37,11 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     AppComponent,
     HomeComponent,
     NavComponent,
+    SchoolComponent,
+    CollegeComponent,
+    
+    CollegeComponent,
+    SchoolComponent,
     SignupComponent,
     CollegeComponent,
     EnterpriseComponent,
@@ -47,6 +55,7 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     WalletComponent,
     AccOrdertrackComponent,
     NotesComponent,
+    UniformsComponent,
     CartItemsComponent
     
 
