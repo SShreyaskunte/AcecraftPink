@@ -1,0 +1,25 @@
+<div class="container mt-5" style="border: 1px solid #f1f1f1; min-height: 100vh;">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3 d-flex flex-column">
+        <div class="login-box">
+           
+            <form class="mt-2" [formGroup]="loginForm" (ngSubmit)="login()">
+                <h3 class="text-center secondary" style="color:#978f8f; font-size: 32px; font-family:Ubuntu;">Login With Acecraft</h3>
+                <div class="form-group pt-2">
+                    <input type="email" class="form-control" name="Email" formControlName="email" placeholder="Username">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['email'].errors?.['required']">Email required</strong>
+                    <strong class="error ng-binding" *ngIf=" submitted && f['email'].errors?.['pattern']">Enter Valid Email</strong>
+                </div>
+                <div class="form-group pt-3">
+                    <input type="password" class="form-control" name="Password" formControlName="password" placeholder="Password">
+                    <strong class="error ng-binding" *ngIf=" submitted && f['password'].errors?.['required']">Password required</strong>
+                    <strong class="error ng-binding" *ngIf=" submitted && f['password'].errors?.['minlength']">Min. Length is 6 characters</strong>
+                </div>
+               
+                <button class="btn btn-dark mt-3 w-100" type="submit">Login</button>   
+                <div class="text-center text-secondary mt-4" style="font-size: 13px;"><a class="text-secondary" href="forgotpass">Forgot Password?</a></div>  
+            </form>
+        </div>
+    </div>
+
+</div>
+
