@@ -18,7 +18,7 @@ export class SignupComponent implements OnInit {
   registerForm = new FormGroup({
     fname: new FormControl(''),
     lname: new FormControl(''),
-    email: new FormControl(''),
+    useremail: new FormControl(''),
     password: new FormControl(''),
     confpassword: new FormControl(''),
     pname: new FormControl(''),
@@ -34,7 +34,7 @@ export class SignupComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       fname: ['', [Validators.required]],
       lname: ['', [Validators.required]],
-      email: ['', [Validators.required,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
+      useremail: ['', [Validators.required,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confpassword: ['', [Validators.required, Validators.minLength(6)]],
       pname: ['', [Validators.required]],

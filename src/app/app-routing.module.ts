@@ -17,8 +17,6 @@ import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.componen
 import { NotesInfoComponent } from './notes-info/notes-info.component';
 import { NotesComponent } from './notes/notes.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
-import { CounterComponent } from './counter/counter.component';
-
 
 
 

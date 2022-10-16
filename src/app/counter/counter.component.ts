@@ -6,17 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit(): void {
   }
-  // count:number=1;
+  count:number=1;
 
-  //Receive the counterValue from counterchild
 
-  // receiveValue($event:any){
-    // this.count=$event;
-  // }
+  receivecount($event: number) {
+    this.count = $event;
+  }
 
 }

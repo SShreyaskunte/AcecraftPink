@@ -21,6 +21,10 @@ import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
 import { NotesComponent } from './notes/notes.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { CounterchildComponent } from './counter/counterchild/counterchild.component';
+import { CounterComponent } from './counter/counter.component';
+
+
 
 
 
@@ -44,7 +48,9 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     WalletComponent,
     AccOrdertrackComponent,
     NotesComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    CounterchildComponent,
+    CounterComponent
     
 
   ],
