@@ -27,6 +27,7 @@ import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
 import { NotesComponent } from './notes/notes.component';
 import { UniformsComponent } from './uniforms/uniforms.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
 
 
 
@@ -51,7 +52,8 @@ import { UniformsComponent } from './uniforms/uniforms.component';
     WalletComponent,
     AccOrdertrackComponent,
     NotesComponent,
-    UniformsComponent
+    UniformsComponent,
+    CartItemsComponent
     
 
   ],

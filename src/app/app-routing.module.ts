@@ -20,6 +20,8 @@ import { NotesComponent } from './notes/notes.component';
 import { UniformsComponent } from './uniforms/uniforms.component';
 
 
+import { CartItemsComponent } from './cart-items/cart-items.component';
+import { CounterComponent } from './counter/counter.component';
 
 
 
@@ -43,6 +45,7 @@ const routes: Routes = [
   {path:'noteinfo',component:NotesInfoComponent},
   {path:'note',component:NotesComponent},
   {path:'uniform',component:UniformsComponent},
+  {path:'cart',component:CartItemsComponent}
 
 ];
 
