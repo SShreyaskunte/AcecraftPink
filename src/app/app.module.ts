@@ -23,11 +23,9 @@ import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.componen
 import { NotesComponent } from './notes/notes.component';
 import { UniformsComponent } from './uniforms/uniforms.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { DetailviewComponent } from './detailview/detailview.component';
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 import { CounterComponent } from './counter/counter.component';
-import { DetailviewComponent } from './detailview/detailview.component';
-
-
 
 
 
@@ -58,6 +56,8 @@ import { DetailviewComponent } from './detailview/detailview.component';
     UniformsComponent,
     CartItemsComponent,
     DetailviewComponent
+    
+
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DetailviewService } from './detailviewService.service';
+import { DetailviewService } from './detailview.service';
 
 describe('DetailviewService', () => {
   let service: DetailviewService;

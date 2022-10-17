@@ -8,9 +8,15 @@ import { Detailview } from './detailview';
   providedIn: 'root'
 })
 export class DetailviewService {
+  removeItemFromCart(deleteItem: Detailview) {
+    throw new Error('Method not implemented.');
+  }
+  getCartItems() {
+    throw new Error('Method not implemented.');
+  }
 
   url: string = ""
-  detailviewUrl = environment.detailview;
+  detailviewUrl = environment.detailapi;
 
   constructor(private http: HttpClient) {
     this.url = this.detailviewUrl + "/";
