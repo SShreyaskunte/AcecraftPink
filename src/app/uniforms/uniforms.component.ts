@@ -33,18 +33,7 @@ export class UniformsComponent implements OnInit {
     this.detail.id=product.id;
     this.detsvc.addToCart(this.detail);
     console.log(product.id);
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'top',
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-    })
-
-    Toast.fire({
-      icon: 'success',
-      title: 'Item added successfully'
-    })
+    
    // this.detsvc.getCount();
   }
   alll:any=(all as any).default;
