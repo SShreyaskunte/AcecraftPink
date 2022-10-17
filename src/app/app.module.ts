@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CollegeComponent } from './college/college.component';
 import { NotesInfoComponent } from './notes-info/notes-info.component';
+import { CollegeComponent } from './college/college.component';
+import { SchoolComponent } from './school/school.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
@@ -20,9 +21,11 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.component';
 import { NotesComponent } from './notes/notes.component';
+import { UniformsComponent } from './uniforms/uniforms.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 import { CounterComponent } from './counter/counter.component';
+import { DetailviewComponent } from './detailview/detailview.component';
 
 
 
@@ -33,8 +36,9 @@ import { CounterComponent } from './counter/counter.component';
     AppComponent,
     HomeComponent,
     NavComponent,
-    CollegeComponent,
     EnterpriseComponent,
+    SchoolComponent,
+    CollegeComponent,
     SignupComponent,
     CollegeComponent,
     EnterpriseComponent,
@@ -50,16 +54,18 @@ import { CounterComponent } from './counter/counter.component';
     NotesComponent,
     CartItemsComponent,
     CounterchildComponent,
-    CounterComponent
-    
-
+    CounterComponent,
+    UniformsComponent,
+    CartItemsComponent,
+    DetailviewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

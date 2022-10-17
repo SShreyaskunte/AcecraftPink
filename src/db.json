@@ -36,6 +36,26 @@
       "pname": "Abcd",
       "adno": 12345,
       "id": 4
+    },
+    {
+      "fname": "Sirisha",
+      "lname": "Y",
+      "email": "sirisha@gmail.com",
+      "password": "sirisha1234",
+      "confpassword": "sirisha1234",
+      "pname": "abcdg",
+      "adno": 12345,
+      "id": 5
+    },
+    {
+      "fname": "sachin",
+      "lname": "k",
+      "email": "sachin@gmail.com",
+      "password": "sachin12344",
+      "confpassword": "sachin12344",
+      "pname": "abcdg",
+      "adno": 123332,
+      "id": 6
     }
   ],
   "cart": [
@@ -47,17 +67,23 @@
       "size": 20,
       "price": 350,
       "quantity": 2,
-      "pimage": "//cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-640x640.jpg"
-    },
-    {
-      "id": 2,
-      "pname": "CIS Royal Day Wear (Grade 1-5)",
-      "product_code": "CIEDPT20",
-      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
-      "size": 22,
-      "price": 450,
-      "quantity": 1,
-      "pimage": "//cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-1024x1024.jpg"
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-640x640.jpg"
     }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "pname": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
+      "product_code": "NHISDWT18",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "size": 20,
+      "price": 350,
+      "quantity": 2,
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-640x640.jpg"
+    },
+    {}
+  ],
+  "detailview": [
+   
   ]
 }

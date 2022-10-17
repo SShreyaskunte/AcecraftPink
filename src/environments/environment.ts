@@ -4,8 +4,10 @@
 
 export const environment = {
   production: false,
-  userapi:" https://localhost:7130/api/Registrations",
-  cartapi:" http://localhost:3000/cart"
+  userapi:" https://localhost:7012/api/Registrations",
+  cartapi:" http://localhost:3000/cart",
+  items:" http://localhost:3000/items",
+  detailview: "http://localhost:3000/detailview"
 };
 
 /*

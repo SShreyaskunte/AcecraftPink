@@ -68,7 +68,10 @@ export class CartItemsComponent implements OnInit {
       }
     )
   }
-  counterValue=this.carts.quantity;
+
+  
+  // counterValue=this.cartData.reduce((item: any)=>(item.quantity));
+  counterValue=this.quantity;
   countLessThenOne=true;
   countMax=true;
   

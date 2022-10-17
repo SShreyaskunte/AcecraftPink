@@ -2,7 +2,7 @@ export class UserModel {
         id: number = 0;
         fname: string = '';
         lname: string = '';
-        email: string = '';
+        useremail: string = '';
         password: string = '';
         confpassword: string = '';
         pname: string = '';

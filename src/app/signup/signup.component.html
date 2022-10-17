@@ -34,7 +34,7 @@
                     <strong class="error ng-binding" *ngIf=" submitted && f['pname'].errors?.['required']">Parent Name required</strong>
                 </div>
                 <div class="form-group pt-3">
-                    <input type="number" class="form-control" name="Admission" formControlName="adno" placeholder="Admission Number">
+                    <input type="text" class="form-control" name="Admission" formControlName="adno" placeholder="Admission Number">
                     <strong class="error ng-binding" *ngIf=" submitted && f['adno'].errors?.['required']">Admission No. required</strong>
                 </div>
                 <button class="btn btn-dark mt-3 w-100" type="submit">Register</button>   

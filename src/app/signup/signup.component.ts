@@ -38,7 +38,7 @@ export class SignupComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
       confpassword: ['', [Validators.required, Validators.minLength(6)]],
       pname: ['', [Validators.required]],
-      adno: ['', [Validators.required, Validators.pattern('[0-9]*')]]
+      adno: ['', [Validators.required]]
       // mobile: ['', [Validators.required, Validators.pattern('[0-9]*')]]
     }
     // SignupComponent.mustMatch('password', 'confpassword')
