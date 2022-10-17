@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin1234",
+      "mobile": "9898989898",
+      "id": 1
+    },
+    {
+      "fname": "abcd",
+      "lname": "efgh",
+      "email": "abc@gmail.com",
+      "password": "abc1234",
+      "confpassword": "abc1234",
+      "pname": "hjki",
+      "adno": 1234567,
+      "id": 2
+    },
+    {
+      "fname": "Sachin",
+      "lname": "Krishna",
+      "email": "abcdef@gmail.com",
+      "password": "sachin",
+      "confpassword": "sachin",
+      "pname": "ghjkjh",
+      "adno": 345678,
+      "id": 3
+    },
+    {
+      "fname": "Shreyas",
+      "lname": "Kunte",
+      "email": "shreyas@gmail.com",
+      "password": "shreyas1234",
+      "confpassword": "shreyas1234",
+      "pname": "Abcd",
+      "adno": 12345,
+      "id": 4
+    },
+    {
+      "fname": "Sirisha",
+      "lname": "Y",
+      "email": "sirisha@gmail.com",
+      "password": "sirisha1234",
+      "confpassword": "sirisha1234",
+      "pname": "abcdg",
+      "adno": 12345,
+      "id": 5
+    },
+    {
+      "fname": "sachin",
+      "lname": "k",
+      "email": "sachin@gmail.com",
+      "password": "sachin12344",
+      "confpassword": "sachin12344",
+      "pname": "abcdg",
+      "adno": 123332,
+      "id": 6
+    }
+  ],
+  "cart": [
+    {
+      "id": 3,
+      "pname": "NHG Shirt [Girls, Grade 1-10]",
+      "size": 20,
+      "quantity": 3,
+      "price": 550,
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+    }
+  ],
+  "productdetail": [
+    {
+      "id": 3,
+      "pname": "NHG Shirt [Girls, Grade 1-10]",
+      "product_code": "NHGSHRT20",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 550,
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+    },
+    {
+      "id": 2,
+      "pname": "CIS Royal Day Wear (Grade 1-5)",
+      "product_code": "CIEDPT20",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 450,
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "pname": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
+      "product_code": "NHISDWT18",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 350,
+      "pimage": "//cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-640x640.jpg"
+    },
+    {
+      "id": 2,
+      "pname": "CIS Royal Day Wear (Grade 1-5)",
+      "product_code": "CIEDPT20",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 450,
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
+    },
+    {
+      "id": 3,
+      "pname": "NHG Shirt [Girls, Grade 1-10]",
+      "product_code": "NHGSHRT20",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 550,
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+    }
+  ]
+}
