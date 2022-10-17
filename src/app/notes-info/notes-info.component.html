@@ -52,53 +52,45 @@
 <hr style="height: 1px;color:#978f8f79">
 <br>
 <div>
-    <h3 style="color: #978F8F;margin-left:5em; font-family:'proxima';font-size:27px;">0
-        <span>Comment</span>
-    </h3><br>
+    <div>
+        <h3 id="count" style="color: #978F8F;margin-left:5em; font-family:'proxima';font-size:27px;">{{count}}<span>&nbsp;Comment</span></h3>
+    </div><br>
 </div>
 
 <hr style="height: 1px;color:#978f8f79">
 <br>
-<h3 style="color: #978F8F;margin-left:5em; font-family:'proxima';font-size:27px;">0
+<h3 style="color: #978F8F;margin-left:5em; font-family:'proxima';font-size:27px;">
     <span>Leave a Comment</span>
 </h3>
 <br>
 
 <div style="margin-left: 9em;">
-    <form class="form-horizontal ng-scope ms-widget ng-pristine ng-valid ng-valid-email" name="blogform2" ms-success="ms.widgets.getComment.loadComments()" data-ng-name="ms+++form+++addBlogComment" ms-widgetname="ms.form.addBlogComment" data-ng-controller="ms_theme.controllers.ms+++form+++addBlogComment" ms-widgetid="ms-widget-106" id="ms-widget-106" style="">
-
-        <!-- ngIf: type=='error' -->
-        <!-- ngIf: type=='success' -->
-        <br>
-        <label class="ng-binding"><b>Name</b></label>
-
-        <div class="row ms-mb-m ">
-            <div class="col-md-7 col-md-offset-0">
-                <input type="text" name="username" class="form-control ng-pristine ng-untouched ng-valid" id="name" placeholder="Name" ng-model="user_name">
+    <form [formGroup]="submitForm" (ngSubmit)="submitHandler()" class="login-form">
+        <div class="form-group" class="authdecarator">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" id="Name" name="Name" class="form-control" formControlName="Name" placeholder="Name">
+            <div *ngIf="f['Name'].invalid && f['Name'].touched">
+                <div *ngIf="f['Name'].errors && f['Name'].errors['required']" class="alert alert-danger"
+                    style="width:60%">*Please enter Name</div>
             </div>
         </div>
-        <br>
-        <label class="ng-binding"><b>Email</b></label>
-
-        <div class="row ms-mb-m ">
-            <div class="col-md-7 col-md-offset-0">
-                <input class="form-control ng-pristine ng-untouched ng-valid ng-valid-email" type="email" name="email2" id="inputEmail5" placeholder="Email" ng-model="user_email" style="">
-               
+        <div class="form-group" class="authdecarator">
+            <label for="Email" class="form-label">Email</label>
+            <input type="text" id="Email" name="Email" class="form-control" formControlName="Email" placeholder="Email">
+            <div *ngIf="f['Email'].invalid && f['Email'].touched">
+                <div *ngIf="f['Email'].errors && f['Email'].errors['required']" class="alert alert-danger"
+                    style="width:60%">*Email is required</div>
             </div>
         </div>
-        <br>
-        <label class="ng-binding"><b>Message</b></label>
-
-        <div class="row ms-mb-m ">
-            <div class="col-md-7 col-md-offset-0">
-                <textarea name="password" class="form-control ng-pristine ng-untouched ng-valid" rows="3" id="comment" placeholder="Your Comment" ng-model="comment"></textarea>
-            </div>
-        </div> <br>
-        <p class="ms-mt-m">
-            <button  type="submit" ng-click="submit(detail)">Post
-                Comment
-            </button>
-        </p>
-
+        <div class="form-group" class="authdecarator">
+            <label for="Email" class="form-label">Message</label>
+            <textarea rows="3" id="Message" name="Message" class="form-control" formControlName="Message"
+                placeholder="Your comment"></textarea>
+        </div>
+        <div>
+            <button class="btn btn-primary btnclass" [disabled]="!submitForm.valid" class="submit"
+                style="width:100%;padding-bottom:10px;">Post Comment</button>
+                <br><br>
+        </div>
     </form>
 </div>

@@ -37,7 +37,8 @@ import { NotesComponent } from './notes/notes.component';
     LoginComponent,
     ForgotpasswordComponent,
     OrderstatusComponent,
-    NotesComponent
+    NotesComponent,
+    NotesInfoComponent
     
 
   ],
