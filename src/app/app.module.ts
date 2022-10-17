@@ -29,6 +29,7 @@ import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.componen
 import { NotesComponent } from './notes/notes.component';
 import { UniformsComponent } from './uniforms/uniforms.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { DetailviewComponent } from './detailview/detailview.component';
 
 
 
@@ -56,7 +57,8 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     AccOrdertrackComponent,
     NotesComponent,
     UniformsComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    DetailviewComponent
     
 
   ],
