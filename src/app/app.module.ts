@@ -30,6 +30,7 @@ import { NotesComponent } from './notes/notes.component';
 import { UniformsComponent } from './uniforms/uniforms.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
 import { DetailviewComponent } from './detailview/detailview.component';
+import { NotesInfoComponent } from './notes-info/notes-info.component';
 
 
 
@@ -40,7 +41,7 @@ import { DetailviewComponent } from './detailview/detailview.component';
     NavComponent,
     SchoolComponent,
     CollegeComponent,
-    
+    NotesInfoComponent,
     CollegeComponent,
     SchoolComponent,
     SignupComponent,
