@@ -2,7 +2,7 @@
 <div class="container-fluid" style="background-color: black; min-height:100vh;">
     <div class="container">
         <div class="row pt-5">
-            <div class="col-6">
+            <div class="col-10">
                 <h4 class="text-secondary">YOUR ADDRESSES</h4>
             </div>
 
@@ -10,15 +10,84 @@
                 <h4 style="text-align: right;">Change Password</h4>
 
             </div> -->
-            <div class="col-6">
-
-                <h4 style="text-align: right;">Add Address</h4>
+            <div class="col-2">
+               
+                    <!--Button trigger modal -->
+                    <button (click)="clickAddAddress()" type="button" class="btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <a><span style="color:white;">ADD ADDRESS</span></a>
+                    </button>
             </div>
 
         </div>
     </div>
-    <div class="container" style="height:150px; background-color:white;">
-     <p class="pt-5 text-center" style="font-size:20px;">No Address Added Yet</p>
+    <div class="row" *ngFor="let addresss of addressData">
+        <div class="container mt-4" style="height:225px; background-color:white; width:95%;">
+            <div class="row">
+                <div class="col-3 pt-3 justify-content-center">
+                    <p>NAME</p>
+                    <p>CONTACT</p>
+                    <p>ADDRESS</p>
+                </div>
+                <div class="col-7 pt-3">
+                    <p>{{addresss.sname}}</p>
+                    <p>{{addresss.contact}}</p>
+                    <p>{{addresss.address}}</p>
+                </div>
+                <div class="col-2">
+                   
+                </div>
+                <div class="row">
+                    <div class="col-10">
+
+                    </div>
+                    <div class="col-2 text-center">
+                        <button (click)="onEdit(addresss)" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                    </button>&nbsp;
+                    <button (click)="deleteAddress(addresss)" class="btn btn-danger"><i
+                            class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog container mw-100">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: black;">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#ccc;">ADD NEW ADDRESSES</h5>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" style="color:white;">Close</button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="formValue">
+                        <div class="mb-3">
+                            <label class="form-label">Student Name</label>
+                            <input type="sname" class="form-control" formControlName="sname">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Contact</label>
+                            <input type="number" class="form-control" formControlName="contact">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                                <textarea type="text" class="form-control" formControlName="address"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="submit" type="button" *ngIf="showAdd" (click)="postAddressDetails()"
+                        class="btn w-100">Save Address</button>
+                    <button type="button" id="submit" *ngIf="showUpdate" (click)="updateAddressDetails()"
+                        class="btn w-100">Update Address</button>
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
-</div>

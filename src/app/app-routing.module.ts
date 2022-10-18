@@ -32,6 +32,7 @@ import { CIS10Component } from './cis10/cis10.component';
 import { CISZippersComponent } from './ciszippers/ciszippers.component';
 import { NHTrousersComponent } from './nhtrousers/nhtrousers.component';
 import { BluehouseComponent } from './bluehouse/bluehouse.component';
+import { AddressComponent } from './address/address.component';
 
 
 

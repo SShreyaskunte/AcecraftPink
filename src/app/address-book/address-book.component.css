@@ -2,3 +2,30 @@ h4{
     color:white;
     font-weight: inherit;
 }
+p{
+    color:#978f8f;
+    font-size: 15px;
+}
+
+:placeholder-shown{
+    font-size: 15px;
+   
+}
+strong{
+    color:red;
+}
+.form-group input{
+    border: 1px solid #ccc;
+}
+.form-group input:focus{
+    box-shadow: 0 0 15px #d3d3d3;
+}
+#submit{
+    background-color: #555;
+    color:white;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: Arial;
+    padding: 10px;
+    border: 3px solid rgb(128, 121, 121);
+}
