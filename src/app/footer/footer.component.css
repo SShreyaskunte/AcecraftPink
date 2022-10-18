@@ -1,0 +1,42 @@
+.footer {
+    color: #fff;
+    background-color: #000;
+    align-items: flex-end;
+    margin-top: auto;
+    bottom:0;
+}
+
+.footer a {
+overflow: hidden;
+display: inline-block;
+color:#9e9e9e;
+}
+
+.footer a:hover {
+    color:#ffffff;
+}
+
+.footer-heading {
+    border-right: 1px solid;
+}
+
+.socialLinks img {
+transform: scale(1.3);
+}
+
+@media screen and (max-width:997px) {
+    .footer-heading {
+        border-right: 1px solid;
+        visibility: hidden;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.socialLinks + div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

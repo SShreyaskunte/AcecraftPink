@@ -1,0 +1,171 @@
+.report {
+    width: 200px;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.bottominst {
+    max-width: 800px;
+    margin: auto;
+}
+
+.body-bg-color {
+    background-color: #fff !important;
+}
+
+.body-bg-color .care-page * {
+    color: black;
+}
+
+.caution {
+    max-width: 360px;
+    margin: 30px auto;
+    background: #ffd634;
+    padding: 20px;
+    display: flex;
+}
+
+.caution .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-exclamation-triangle {
+    font-size: 50px;
+}
+
+.careImg img {
+    max-height: 400px;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+.careImg img:hover {
+    transform: scale(1.1);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.care-icon {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    background-size: 160%;
+    background-position: center;
+}
+.ms-pl-x {
+    padding-left: 25px!important;
+}
+.text-center {
+    text-align: center;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.ms-mt-x {
+    margin-top: 25px!important;
+}
+.proximaThin {
+    font-family: "proxima-thin";
+    color:#000;
+}
+h5, .h5 {
+    font-size: 15px;
+}
+
+.h1, .h2, .h3, .h4, .h6, h1, h2, h3, h4, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+p {
+    margin: 0 0 10.5px;
+}
+
+.icon1 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-1.png);
+}
+
+.icon2 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-2.png);
+}
+
+.icon3 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-3.png);
+}
+
+.icon4 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-4.png);
+}
+
+.icon5 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-5.png);
+}
+
+.icon6 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-6.png);
+}
+
+.icon7 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-7.png);
+}
+
+.icon8 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-8.png);
+}
+
+.icon9 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-9.png);
+}
+
+.icon10 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-10.png);
+}
+
+.icon11 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-11.png);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .careBox .ms-pl-x {
+        padding-left: 0 !important;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    .caution {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

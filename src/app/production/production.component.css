@@ -1,0 +1,135 @@
+.z_index {
+    z-index: 10;
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+    text-shadow: 0 0 9px black;
+}
+.prod1 {
+    min-height: calc(100vh - 110px);
+    position: relative;
+    overflow: hidden;
+}
+.prod1 video {
+    position:absolute;
+}
+.prod1 .content, .prod2 .content, .prod4 .content, .prod6 .content {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    font-family: "proxima-thin";
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: #978f8f;
+    outline:hidden;
+}
+.proximaBold {
+    font-family: "proxima-bold";
+    color: #978f8f;
+    font-size: 28px;
+    margin: 10px 0;
+}
+.proximaThin {
+    font-family: "proxima-thin";
+    color: #978f8f;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.prod2 .content, .prod4 .content, .prod6 .content {
+    max-width: 470px;
+}
+.prod2 {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Acecraft-map.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: calc(100vh - 110px);
+}
+.prod4 {
+    background-size: 45% 85%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/acecraft1.jpg);
+}
+
+.videos video {
+    position: static;
+    width: 50%;
+}
+
+.prod6{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/acecraft2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    min-height: calc(100vh - 110px);
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .prod4 .container {
+    background-size: contain;
+    background-position: top center;
+    }
+    .prod6 .container {
+    background-position: top center !important;
+        background-size: 40vh !important;
+    }
+      .prod2 {
+    background-image: none;
+    min-height: 50vh;
+    }
+    .prod2 .img {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/india1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    width: 100%;
+    }
+    .prod1 .container, .prod2 .content, .prod4 .content, .prod6 .content {
+        min-height: 0;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .videos {
+    flex-direction: column;
+    }
+    .prod6 {
+    background-image: none;
+    }
+    .z_index {
+    position: relative;
+    width: auto;
+    margin-left: auto;
+    }
+    .prod1 video {
+        position: relative;width: 100%;
+        margin: 10px 0;
+    }
+    .prod6 .container, .prod2 .container, .prod4 .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+    .prod1 {
+    min-height: 50vh;
+    }
+    .prod6 .img {
+    min-height: 55vh;
+    }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+    .img {
+    min-height: 50vh !important;
+    }
+    .prod6 {
+    background-size: contain;
+    }
+    .prod6 .container {
+    background-position: right;
+        background-size: contain;
+        min-height: calc(100vh - 220px);
+    }
+    }

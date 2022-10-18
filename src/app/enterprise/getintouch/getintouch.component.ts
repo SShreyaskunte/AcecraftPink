@@ -9,6 +9,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class GetintouchComponent implements OnInit {
 
 submitted = false;
+  //orderFrom: FormGroup;
 
   constructor(private formbuilder:FormBuilder) {
     this.orderFrom=formbuilder.group({
@@ -34,11 +35,13 @@ submitted = false;
 
   submitHandler(){
     this.submitted = true;
+    this.submitted=true;
     if (this.orderFrom.invalid) {
       return;
     }
     console.log(this.orderFrom.value)
     alert("Product added sucessfully.Thank you");
+    alert("Thank You For Contacting Us..");
   }
 
 }

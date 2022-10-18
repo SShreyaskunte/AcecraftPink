@@ -60,6 +60,32 @@
   ],
   "cart": [
     {
+      "id": "2",
+      "pname": "CIS Royal Day Wear (Grade 1-5)",
+      "size": "20",
+      "price": "450",
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
+      "quantity": 2
+    }
+  ],
+  "productdetail": [
+    {
+      "id": 12,
+      "pname": "NH Trousers [Boys]",
+      "product_code": "NHGSHRT20",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 550,
+      "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33874/images/5aa0f01491c2e5ab32f33875/5aa0f02091c2e5ab32f338b4/webp/5aa0f02091c2e5ab32f338b4-480x480.jpg"
+    },
+    {
+      "id": 5,
+      "pname": "CIS Sky Day Wear (Grade 6-8)",
+      "product_code": "CIMDPT26",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 550,
+      "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
+    },
+    {
       "id": "3",
       "pname": "NHG Shirt [Girls, Grade 1-10]",
       "size": "26",
@@ -84,7 +110,6 @@
       "quantity": 4
     }
   ],
-  "productdetail": [],
   "products": [
     {
       "id": 1,
@@ -124,5 +149,31 @@
     },
     {}
   ],
-  "detailview": []
+  "detailview": [],
+  "addresses": [
+    {
+      "id": 1,
+      "sname": "Suman",
+      "contact": 9876543234,
+      "address": "Yermal, Mangalore, Karnataka- 575001"
+    },
+    {
+      "id": 2,
+      "sname": "Shreyas",
+      "contact": 9876545676,
+      "address": "Theerthalli, Shivamogga-57004"
+    },
+    {
+      "id": 3,
+      "sname": "Srikanth",
+      "contact": "9989876",
+      "address": "Mangalore"
+    },
+    {
+      "id": 4,
+      "sname": "Sachin",
+      "contact": "9383848484",
+      "address": "Mangalore"
+    }
+  ]
 }

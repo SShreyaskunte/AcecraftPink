@@ -31,7 +31,7 @@ export class CartItemsComponent implements OnInit {
   }
   cartData: any = [];
   totalprice: number = 0;
-  quantity = 1;
+  quantity: number = 1;
 
   totalPrice(data: any) {
     debugger
@@ -92,6 +92,11 @@ export class CartItemsComponent implements OnInit {
   //increment and decrement 
 
   //Quantity -> 10
+  onChange(event : any)
+  {
+    this.quantity = event.target.value;
+  }
+
   decrement(decrementitem : CartItem){
 
     console.log("cart item in decrement" + decrementitem.quantity)

@@ -38,7 +38,20 @@ import { NhissizechildComponent } from './nhis/nhissizechild/nhissizechild.compo
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 import { CounterComponent } from './counter/counter.component';
 import { BluehouseComponent } from './bluehouse/bluehouse.component';
+import { SortPipe } from './Pipes/sort.pipe';
+import { AddressComponent } from './address/address.component';
 import { GetintouchComponent } from './enterprise/getintouch/getintouch.component';
+import { FooterComponent } from './footer/footer.component';
+import { GetHelpComponent } from './get-help/get-help.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { AccOrderComponent } from './acc-order/acc-order.component';
+import { ProductionComponent } from './production/production.component';
+import { OthersComponent } from './others/others.component';
+import { ReturnsComponent } from './returns/returns.component';
+import { TermsComponent } from './terms/terms.component';
+import { PaymentsComponent } from './payments/payments.component';
+import { CareComponent } from './care/care.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 
 
@@ -79,7 +92,20 @@ import { GetintouchComponent } from './enterprise/getintouch/getintouch.componen
     NHTrousersComponent,
     NhissizechildComponent,
     BluehouseComponent,
-    GetintouchComponent
+    SortPipe,
+    AddressComponent,
+    GetintouchComponent,
+    FooterComponent,
+    GetHelpComponent,
+    AboutUsComponent,
+    AccOrderComponent,
+    ProductionComponent,
+    OthersComponent,
+    ReturnsComponent,
+    TermsComponent,
+    PaymentsComponent,
+    CareComponent,
+    ShippingComponent
     
 
   ],

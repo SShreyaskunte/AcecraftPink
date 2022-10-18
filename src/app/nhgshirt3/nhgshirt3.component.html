@@ -19,14 +19,7 @@
             <hr>
             <button class="btn btn-dark" onclick="child()">SIZE GUIDE</button>
             <br><br><br>
-            <!-- <form action="" #f="ngForm" novalidate>
-                <label style="background-color: black; color:white; height: 25px ; width: 80px; text-align: center;"> <p>Size</p></label>
-                <select name="size" style="width: 120px ;height: 25px;" [(ngModel)]="size">
-                      <option value="" disabled>Select size</option>
-                      <option *ngFor="let s of sizes" value={{s}}>
-                        {{s.name}}
-                </select>
-            </form> -->
+            <label style="background-color: black; color:white; height: 25px ; width: 80px; text-align: center;"> <p>Size</p></label>
             <select class="dropdown" [(ngModel)]="size">
               <option value="0">Please Select</option>
               <option *ngFor="let s of sizes" value={{s.name}}>
@@ -34,7 +27,6 @@
               </option>
             </select>
             
-            <p>Form value: {{size}}</p>
             <!-- form value: {user: ''} -->
             <div data-ng-if="product.available" class="ms-mt-l quantity ng-scope">
               <br><br>
@@ -99,7 +91,7 @@
     </div>
     <div class="col-1"></div>
 
-
+<app-footer></app-footer>
 <script>
   document.addEventListener('DOMContentLoaded', () =>
   {

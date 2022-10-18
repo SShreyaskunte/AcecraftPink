@@ -33,6 +33,7 @@ import { CISZippersComponent } from './ciszippers/ciszippers.component';
 import { NHTrousersComponent } from './nhtrousers/nhtrousers.component';
 import { BluehouseComponent } from './bluehouse/bluehouse.component';
 import { GetintouchComponent } from './enterprise/getintouch/getintouch.component'; 
+import { AddressComponent } from './address/address.component';
 
 
 

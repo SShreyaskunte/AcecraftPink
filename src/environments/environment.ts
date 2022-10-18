@@ -7,7 +7,8 @@ export const environment = {
   userapi:"https://localhost:7012/api/Registrations",
   cartapi:" http://localhost:3000/cart",
   detailapi:"http://localhost:3000/productdetail",
-  productapi:"http://localhost:3000/products"
+  productapi:"http://localhost:3000/products",
+  addressapi:"http://localhost:3000/addresses"
 };
 
 /*
