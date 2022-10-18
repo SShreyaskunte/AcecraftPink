@@ -19,27 +19,24 @@
             <hr>
             <button class="btn btn-dark" onclick="child()">SIZE GUIDE</button>
             <br><br><br>
-            <form action="">
-                <label for="cars" style="background-color: black; color:white; height: 30px ; width: 80px; text-align: center;"> <p style="padding: 5px ;">Size</p></label>
-                <select name="cars" id="cars" style="width: 120px ;">
-                    <optgroup label="Please Select" style="text-align:center;">
-                        <option value="volvo">18</option>
-                        <option value="saab">20</option>
-                        <option value="saab">22</option>
-                        <option value="saab">24</option>
-                        <option value="saab">26</option>
-                        <option value="saab">28</option>
-                        <option value="saab">30</option>
-                        <option value="saab">32</option>
-                    </optgroup>
-                </select>
-            </form>
-
+            <label style="background-color: black; color:white; height: 25px ; width: 80px; text-align: center;"> <p>Size</p></label>
+            <select class="dropdown" [(ngModel)]="size">
+              <option value="0">Please Select</option>
+              <option *ngFor="let s of sizes" value={{s.name}}>
+                {{s.name}}
+              </option>
+            </select>
+            
+            <!-- form value: {user: ''} -->
             <div data-ng-if="product.available" class="ms-mt-l quantity ng-scope">
-                <span class="lp ng-binding">Quantity: </span><br><span class="btn-default btn-sm ng-hide" style="background:white !important" ng-hide="quantity<=1" ng-click="subtract(1)"><i class="fa fa-minus fa-white"></i> </span><input type="text" name="input" data-ng-model="quantity" onkeypress="return isNumberKey(event)" class="input_qty text-center ms-mt-s ms-mb-m ms-h-26 ms-w-60 ng-pristine ng-untouched ng-valid" readonly=""><span class="btn-default btn-sm" style="background:white !important" ng-click="add(1)"><i class="fa fa-plus fa-white"></i></span>
+              <br><br>
+              <div>
+                <label style="background-color: black; color:white; height: 25px ; width: 75px; text-align: center; ">Quantity</label> 
+                  <input type="number"  [(ngModel)]="quantity"  style="width:21%; height: 25px ; text-align: center;" min="1" max="10">  
+              </div>         
             </div>
             <br><br><br>
-        <button class="btn btn-dark">Add to Cart</button> &nbsp;&nbsp;
+        <button class="btn btn-dark" (click)="addToCart(['2','CIS Royal Day Wear (Grade 1-5)','size','450','https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg','quantity'])" >Add to Cart</button> &nbsp;&nbsp;
         <button class="btn btn-dark">Buy Now</button>
         <br><br>
         </div>

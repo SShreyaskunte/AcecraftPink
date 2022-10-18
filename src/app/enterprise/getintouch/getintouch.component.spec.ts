@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CISShortsComponent } from './cisshorts.component';
+import { GetintouchComponent } from './getintouch.component';
 
-describe('CISShortsComponent', () => {
-  let component: CISShortsComponent;
-  let fixture: ComponentFixture<CISShortsComponent>;
+describe('GetintouchComponent', () => {
+  let component: GetintouchComponent;
+  let fixture: ComponentFixture<GetintouchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CISShortsComponent ]
+      declarations: [ GetintouchComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CISShortsComponent);
+    fixture = TestBed.createComponent(GetintouchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

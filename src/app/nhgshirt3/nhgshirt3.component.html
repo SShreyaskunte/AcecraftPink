@@ -27,20 +27,20 @@
                         {{s.name}}
                 </select>
             </form> -->
-            <select class="dropdown" [(ngModel)]="sizee">
+            <select class="dropdown" [(ngModel)]="size">
               <option value="0">Please Select</option>
               <option *ngFor="let s of sizes" value={{s.name}}>
                 {{s.name}}
               </option>
             </select>
             
-            <p>Form value: {{sizee}}</p>
+            <p>Form value: {{size}}</p>
             <!-- form value: {user: ''} -->
             <div data-ng-if="product.available" class="ms-mt-l quantity ng-scope">
               <br><br>
               <div>
                 <label style="background-color: black; color:white; height: 25px ; width: 75px; text-align: center; ">Quantity</label> 
-                  <input type="number" name="quantity" [(ngModel)]="quantity" style="width:21%; height: 25px ; text-align: center;" min="1" max="10">  
+                  <input type="number"  [(ngModel)]="quantity"  style="width:21%; height: 25px ; text-align: center;" min="1" max="10">  
               </div>         
             </div>
             <br><br><br>

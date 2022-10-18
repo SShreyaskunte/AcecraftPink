@@ -27,3 +27,9 @@ p{
     color:black;
     font-size: 14px;
 }
+
+pre{
+ 
+    font-weight: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}

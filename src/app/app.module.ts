@@ -30,7 +30,6 @@ import { CIS4Component } from './cis4/cis4.component';
 import { CIS5Component } from './cis5/cis5.component';
 import { CIS6Component } from './cis6/cis6.component';
 import { CIS7Component } from './cis7/cis7.component';
-import { CISShortsComponent } from './cisshorts/cisshorts.component';
 import { NHGJumpersComponent } from './nhgjumpers/nhgjumpers.component';
 import { CIS10Component } from './cis10/cis10.component';
 import { CISZippersComponent } from './ciszippers/ciszippers.component';
@@ -41,6 +40,7 @@ import { CounterComponent } from './counter/counter.component';
 import { BluehouseComponent } from './bluehouse/bluehouse.component';
 import { SortPipe } from './Pipes/sort.pipe';
 import { AddressComponent } from './address/address.component';
+import { GetintouchComponent } from './enterprise/getintouch/getintouch.component';
 
 
 
@@ -75,7 +75,6 @@ import { AddressComponent } from './address/address.component';
     CIS5Component,
     CIS6Component,
     CIS7Component,
-    CISShortsComponent,
     NHGJumpersComponent,
     CIS10Component,
     CISZippersComponent,
@@ -83,7 +82,8 @@ import { AddressComponent } from './address/address.component';
     NhissizechildComponent,
     BluehouseComponent,
     SortPipe,
-    AddressComponent
+    AddressComponent,
+    GetintouchComponent
     
 
   ],

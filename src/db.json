@@ -75,6 +75,30 @@
       "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
       "price": 550,
       "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
+    },
+    {
+      "id": "3",
+      "pname": "NHG Shirt [Girls, Grade 1-10]",
+      "size": "26",
+      "price": "355",
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg",
+      "quantity": 4
+    },
+    {
+      "id": "2",
+      "pname": "CIS Royal Day Wear (Grade 1-5)",
+      "size": "20",
+      "price": "450",
+      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
+      "quantity": 2
+    },
+    {
+      "id": "4",
+      "pname": "CIS Sky Day Wear (Grade 6-8)",
+      "size": "24",
+      "price": "500",
+      "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg",
+      "quantity": 4
     }
   ],
   "products": [
@@ -129,6 +153,18 @@
       "sname": "Shreyas",
       "contact": 9876545676,
       "address": "Theerthalli, Shivamogga-57004"
+    },
+    {
+      "id": 3,
+      "sname": "Srikanth",
+      "contact": "9989876",
+      "address": "Mangalore"
+    },
+    {
+      "id": 4,
+      "sname": "Sachin",
+      "contact": "9383848484",
+      "address": "Mangalore"
     }
   ]
 }

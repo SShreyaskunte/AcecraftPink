@@ -67,15 +67,20 @@
                     <form [formGroup]="formValue">
                         <div class="mb-3">
                             <label class="form-label">Student Name</label>
-                            <input type="sname" class="form-control" formControlName="sname">
+                            <input type="sname" class="form-control" formControlName="sname" placeholder="Student Name">
+                            <label class="error ng-binding" *ngIf=" submitted && f['sname'].errors?.['required']">Name is required</label>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Contact</label>
-                            <input type="number" class="form-control" formControlName="contact">
+                            <input type="text" class="form-control" formControlName="contact" placeholder="Contact No.">
+                            <label class="error ng-binding" *ngIf=" submitted && f['contact'].errors?.['required']">Contact is required</label>
+                            <label class="error ng-binding" *ngIf="submitted && f['contact'].errors?.['pattern']">Enter valid Contact No.</label>
+                            <label class="error ng-binding" *ngIf="submitted && f['contact'].errors?.['maxlength']">Max Length of Contact No. is 10 digits</label>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Address</label>
-                                <textarea type="text" class="form-control" formControlName="address"></textarea>
+                                <textarea type="text" class="form-control" formControlName="address" placeholder="Address"></textarea>
+                                <label class="error ng-binding" *ngIf="submitted && f['address'].errors?.['required']">Address is required</label>
                         </div>
                     </form>
                 </div>
