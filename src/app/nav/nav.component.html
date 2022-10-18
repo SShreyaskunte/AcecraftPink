@@ -31,11 +31,10 @@
               <a class="nav-link" href="#"><b>AIREN MASK</b></a>
             </li>
             <!-- <a href="#" style="padding-left:4em;"> -->
-
-            <li class="nav-item dropdown" style="margin-left:6em;">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img
+          <div class="dropdown">
+              <button class="dropbtn bg-black" href="#" role="button" data-bs-toggle="dropdown"><img
                   src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/setting.png" class="img-responsive"
-                  width="20"></a>
+                  width="20"></button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" routerLink="login" *ngIf="!auth">Sign In &nbsp;| &nbsp;&nbsp;&nbsp;<span> <i class="fa-sharp fa-solid fa-right-to-bracket"></i></span></a></li>
                 <li><a class="dropdown-item" routerLink="signup" *ngIf="!auth">Register &nbsp;| &nbsp;&nbsp;&nbsp;<span><i class="fa-sharp fa-solid fa-user-plus"></i></span></a></li>
@@ -44,7 +43,7 @@
                 <li><a class="dropdown-item" routerLink="personalinfo" *ngIf="auth">Account &nbsp;| &nbsp;&nbsp;&nbsp;<span><i class="fa-solid fa-user"></i></span></a></li>
                 <li><a class="dropdown-item" routerLink="login" *ngIf="auth">Logout &nbsp;| &nbsp;&nbsp;&nbsp;</a></li>
               </ul>
-            </li>
+          </div>
             <!-- <img src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/setting.png" class="img-responsive" width="20"> -->
 
             <!-- </a> -->
@@ -89,7 +88,7 @@
           <a title="0" data-ng-href="/cart" routerLink="cart">
             <div class="my-cart" style="color: white;">
               <i class="fas fa-shopping-cart" style="color: white;"></i>
-              <span class="cart badge badge-cart ng-binding">0</span>
+              <span class="cart badge badge-cart ng-binding" style="font-size: 20px;"><sup>{{cartCount}}</sup></span>
             </div>
           </a>
         </div>

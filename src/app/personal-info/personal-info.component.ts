@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
+import { UserServiceService } from '../user-service.service';
+import { Router } from '@angular/router';
+
+
+
 
 @Component({
   selector: 'app-personal-info',
@@ -7,9 +13,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalInfoComponent implements OnInit {
 
-  constructor() { }
+  userapi=environment.userapi;
+
+  constructor(private userService: UserServiceService) { }
 
   ngOnInit(): void {
+
   }
 
 }

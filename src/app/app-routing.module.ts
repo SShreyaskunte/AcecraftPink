@@ -32,6 +32,7 @@ import { CIS10Component } from './cis10/cis10.component';
 import { CISZippersComponent } from './ciszippers/ciszippers.component';
 import { NHTrousersComponent } from './nhtrousers/nhtrousers.component';
 import { BluehouseComponent } from './bluehouse/bluehouse.component';
+import { GetintouchComponent } from './enterprise/getintouch/getintouch.component'; 
 
 
 
@@ -66,7 +67,8 @@ const routes: Routes = [
   {path:'yellow',component:CIS10Component},
   {path:'zipper',component:CISZippersComponent},
   {path:'trousers',component:NHTrousersComponent},
-  {path:'blue',component:BluehouseComponent}
+  {path:'blue',component:BluehouseComponent},
+  {path:'getintouch',component:GetintouchComponent}
 ];
 
 @NgModule({

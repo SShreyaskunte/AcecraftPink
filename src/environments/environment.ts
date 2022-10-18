@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  userapi:"https://localhost:7183/api/Registrations",
+  userapi:"https://localhost:7012/api/Registrations",
   cartapi:" http://localhost:3000/cart",
   detailapi:"http://localhost:3000/productdetail",
   productapi:"http://localhost:3000/products"

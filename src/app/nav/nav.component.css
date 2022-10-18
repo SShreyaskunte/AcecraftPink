@@ -34,7 +34,7 @@ element.style {
     position: absolute;
     padding: 20px;
     width: 230px;
-    left: -40px;
+    left: -70px;
     font-size: 22px;
     transition: all 0.3s ease;
     /* visibility: hidden; */
@@ -57,3 +57,23 @@ element.style {
     text-align: right;
  }*/
  i.fa { font-family: 'FontAwesome' !important; }
+
+ .dropdown {
+    display: inline-block;
+    margin-left: 120px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: rgb(0, 0, 0);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
