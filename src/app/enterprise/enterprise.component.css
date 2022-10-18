@@ -124,3 +124,73 @@ i#arrow{
 {
     scale: 90%;
 }
+
+.enterprise3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 80%;
+    height: auto;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 80%;
+}
+
+.proximaThin
+{
+    color: rgb(188, 188, 188);
+    font-size: 20px;
+    text-align: center;
+}
+
+.proximaBold
+{
+    color: rgb(188, 188, 188);
+}
+
+/* .icon::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    border-top: 1px solid #ffffff7d;
+    top: 35px;
+    left: 0;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    border-top: 1px solid #ffffff7d;
+    top: 35px;
+    left: 0;
+} */
+
+.fourth-block {
+    background-size: cover;
+    background-image: url('http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Untitled-1.png');
+    background-position: top;
+  
+    height: 500px;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  
+  .fifth-block {
+    background-size: cover;
+    background-image: url('http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Untitled-2.png');
+    background-position: top;
+    height:500px;
+    background-repeat: no-repeat;
+    background-color: black;
+  }

@@ -30,14 +30,14 @@ export class NHGShirt3Component implements OnInit {
   }
 
   quantity:number=1;
-  sizee:number= 1;
+  size:number= 1;
 
   addToCart(addtocartProd: (string | undefined)[]){
     this.cart.id=addtocartProd[0];
     this.cart.pname=addtocartProd[1];
     this.cart.price=addtocartProd[3];
     this.cart.pimage=addtocartProd[4];
-    this.cart.size=this.sizee;
+    this.cart.size=this.size;
     this.cart.totalPrice=addtocartProd[6];
     this.cart.quantity=this.quantity;
     this.cartsvc.addToCart(this.cart);
@@ -63,7 +63,10 @@ export class NHGShirt3Component implements OnInit {
     {name: '20'},
     {name: '22'},
     {name: '24'},
-    {name: '26'}
+    {name: '26'},
+    {name: '28'},
+    {name: '30'},
+    {name: '32'}
   ];
 
 }
