@@ -68,7 +68,24 @@
       "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
     }
   ],
-  "productdetail": [],
+  "productdetail": [
+    {
+      "id": 12,
+      "pname": "NH Trousers [Boys]",
+      "product_code": "NHGSHRT20",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 550,
+      "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33874/images/5aa0f01491c2e5ab32f33875/5aa0f02091c2e5ab32f338b4/webp/5aa0f02091c2e5ab32f338b4-480x480.jpg"
+    },
+    {
+      "id": 5,
+      "pname": "CIS Sky Day Wear (Grade 6-8)",
+      "product_code": "CIMDPT26",
+      "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+      "price": 550,
+      "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
+    }
+  ],
   "products": [
     {
       "id": 1,
