@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { CollegeComponent } from './college/college.component';
 import { HomeComponent } from './home/home.component';
 import { SchoolComponent } from './school/school.component';
@@ -18,18 +17,27 @@ import { AccOrdertrackComponent } from './acc-ordertrack/acc-ordertrack.componen
 import { NotesInfoComponent } from './notes-info/notes-info.component';
 import { NotesComponent } from './notes/notes.component';
 import { UniformsComponent } from './uniforms/uniforms.component';
-
-
 import { CartItemsComponent } from './cart-items/cart-items.component';
 import { CounterComponent } from './counter/counter.component';
-import { DetailviewComponent } from './detailview/detailview.component';
+import { NhissizechildComponent } from './nhis/nhissizechild/nhissizechild.component';
+import { NHISComponent } from './nhis/nhis.component';
+import { CISRoyalComponent } from './cisroyal/cisroyal.component';
+import { NHGShirt3Component } from './nhgshirt3/nhgshirt3.component';
+import { CIS4Component } from './cis4/cis4.component';
+import { CIS5Component } from './cis5/cis5.component';
+import { CIS6Component } from './cis6/cis6.component';
+import { CIS7Component } from './cis7/cis7.component';
+import { NHGJumpersComponent } from './nhgjumpers/nhgjumpers.component';
+import { CIS10Component } from './cis10/cis10.component';
+import { CISZippersComponent } from './ciszippers/ciszippers.component';
+import { NHTrousersComponent } from './nhtrousers/nhtrousers.component';
+import { BluehouseComponent } from './bluehouse/bluehouse.component';
 
 
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'college',component:CollegeComponent},
-
   {path:'school',component:SchoolComponent},
   {path: 'enterprise', component:EnterpriseComponent},
   {path:'login',component:LoginComponent},
@@ -46,9 +54,19 @@ const routes: Routes = [
   {path:'note',component:NotesComponent},
   {path:'uniform',component:UniformsComponent},
   {path:'cart',component:CartItemsComponent},
-  {path:'proddetail',component:DetailviewComponent}
-
-
+  {path: 'nhis',component:NHISComponent},
+  {path:'nhissize',component:NhissizechildComponent},
+  {path:'cisroyal',component:CISRoyalComponent},
+  {path:'nhg3',component:NHGShirt3Component},
+  {path:'cis4',component:CIS4Component},
+  {path:'cis5',component:CIS5Component},
+  {path:'cis6',component:CIS6Component},
+  {path:'cis7',component:CIS7Component},
+  {path:'jumper',component:NHGJumpersComponent},
+  {path:'yellow',component:CIS10Component},
+  {path:'zipper',component:CISZippersComponent},
+  {path:'trousers',component:NHTrousersComponent},
+  {path:'blue',component:BluehouseComponent}
 ];
 
 @NgModule({
@@ -58,5 +76,4 @@ const routes: Routes = [
 export class AppRoutingModule { 
   
 
-  
 }

@@ -1,0 +1,114 @@
+<div class="container-fluid">
+
+    <!-- <h1>Your bag total is {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1> -->
+
+
+    <!-- <div class="container" *ngFor="let item of cart"> -->
+    <div class="row">
+        <div class="col-5 mt-5">
+            <img
+                src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg" style="height:500px; width:400px; float:right">
+        </div>
+        <div class="col-7 col-sm mt-5" style="padding-left: 50px ;">
+            <h5 style="justify-content: left; font-size: 40px ;">NHG Shirt [Girls, Grade 1-10]</h5><br>
+            <p><strong>Product Code: </strong>NHGSHRT20</p>
+            <p><strong>Brand : </strong>Acecraft</p>
+            <p><strong>Sold By : </strong>Alchemy</p>
+            <p><strong style="font-size:40px ;">₹355</strong>&nbsp;<del>₹535</del></p>
+            <p style="background-color: black; color:white; width: 85px ; margin-left: 40px; padding:10px ;">34% OFF</p>
+            <hr>
+            <button class="btn btn-dark" onclick="child()">SIZE GUIDE</button>
+            <br><br><br>
+            <!-- <form action="" #f="ngForm" novalidate>
+                <label style="background-color: black; color:white; height: 25px ; width: 80px; text-align: center;"> <p>Size</p></label>
+                <select name="size" style="width: 120px ;height: 25px;" [(ngModel)]="size">
+                      <option value="" disabled>Select size</option>
+                      <option *ngFor="let s of sizes" value={{s}}>
+                        {{s.name}}
+                </select>
+            </form> -->
+            <select class="dropdown" [(ngModel)]="sizee">
+              <option value="0">Please Select</option>
+              <option *ngFor="let s of sizes" value={{s.name}}>
+                {{s.name}}
+              </option>
+            </select>
+            
+            <p>Form value: {{sizee}}</p>
+            <!-- form value: {user: ''} -->
+            <div data-ng-if="product.available" class="ms-mt-l quantity ng-scope">
+              <br><br>
+              <div>
+                <label style="background-color: black; color:white; height: 25px ; width: 75px; text-align: center; ">Quantity</label> 
+                  <input type="number" name="quantity" [(ngModel)]="quantity" style="width:21%; height: 25px ; text-align: center;" min="1" max="10">  
+              </div>         
+            </div>
+            <br><br><br>
+        <button class="btn btn-dark" (click)="addToCart(['3','NHG Shirt [Girls, Grade 1-10]','size','355','https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg','quantity'])" >Add to Cart</button> &nbsp;&nbsp;
+        <button class="btn btn-dark">Buy Now</button>
+        <br><br>
+        </div>
+    <div class="col-1">
+
+    </div>
+        <div class="col-10" style="background-color: rgb(239, 239, 239) ;height: 40px; padding: 10px;">
+            <p> <strong>Description of product</strong>
+            </p>
+        </div> 
+        <div class="col-1">
+
+        </div>
+    
+        <div>
+            <pre style="margin-top: 10px ;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">               
+                                Made from Poly-cotton.Polo Tshirt.Short sleeves.</pre>
+        </div>
+
+    <div class="col-1"></div>
+    <div class="col-10">
+            <div style="background-color: rgb(239, 239, 239) ;height: 40px; padding: 10px;">
+                <p> <strong>Related products</strong>
+                </p>
+            </div> 
+            <div class="row" style="padding: 40px ;">
+                <div class="card border-0" style="width:230px;">
+                    <img class="card-img-top" src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <p class="card-text" style="margin-top: 20px ;">NHG Shirt [Girls, Grade 1-10]</p>
+                    </div>
+                  </div>
+                  <div class="card border-0" style="width:230px">
+                    <img class="card-img-top" src="https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <p class="card-text" style="margin-top: 45px ;"> CIS Sky Day Wear (Grade 6-8)</p>
+                    </div>
+                  </div>
+                  <div class="card border-0" style="width:230px">
+                    <img class="card-img-top" src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <p class="card-text" style="margin-top: 15px ;">CIS House T-Shirt (Yellow)</p>
+                    </div>
+                  </div>
+                  <div class="card border-0" style="width:230px">
+                    <img class="card-img-top" src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33832/images/5aa0f01491c2e5ab32f33833/5aa0f01e91c2e5ab32f338a1/webp/5aa0f01e91c2e5ab32f338a1-640x640.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <p class="card-text">CIS Zippers (Grade 1-12)</p>
+                    </div>
+                  </div>
+            </div>
+    </div>
+    <div class="col-1"></div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+  {
+    document.getElementById('size').addEventListener('input', handleSelect);
+  });
+
+function handleSelect()
+{
+  let select = ev.target;
+  console.log(select.value);
+}
+  </script>

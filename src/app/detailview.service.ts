@@ -11,7 +11,10 @@ export class DetailviewService {
   url: string = ""
   detailurl = environment.detailapi;
 
-  constructor(private http : HttpClient) { this.url = this.detailurl + "/";}
+  constructor(private http : HttpClient) { 
+    this.url = this.detailurl + "/";
+  }
+
   addToCart(product: Detailview) {
 
     this.http.post<Detailview>(this.detailurl, product).subscribe(data => {
@@ -35,6 +38,5 @@ export class DetailviewService {
   //     console.log(this.countSubject + "inside sub")
         
   //   })
-  }
-
-
+  // }
+}

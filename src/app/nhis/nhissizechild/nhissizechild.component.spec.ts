@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DetailviewComponent } from './detailview.component';
+import { NhissizechildComponent } from './nhissizechild.component';
 
-describe('DetailviewComponent', () => {
-  let component: DetailviewComponent;
-  let fixture: ComponentFixture<DetailviewComponent>;
+describe('NhissizechildComponent', () => {
+  let component: NhissizechildComponent;
+  let fixture: ComponentFixture<NhissizechildComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DetailviewComponent ]
+      declarations: [ NhissizechildComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DetailviewComponent);
+    fixture = TestBed.createComponent(NhissizechildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

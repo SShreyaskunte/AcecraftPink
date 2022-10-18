@@ -20,13 +20,17 @@
                <div class="col-2 col-sm mt-3 text-center justify-content-center">
                 <div style="text-align: center;">
                     
-                        <button class="btn" [disabled]="!countLessThenOne" (click)="decrement();">
+                        <!-- <button class="btn" [disabled]="!countLessThenOne" (click)="decrement(item);">
                             <i class="fa-solid fa-minus"></i>
                         </button>
-                        <input type="button" class="btn btn-light"  [value]="counterValue">
+                        <input type="button" class="btn btn-light"  [value]="item.quantity">
                         <button class="btn" (click)="increment();">
                             <i class="fa-solid fa-plus"></i>
-                        </button>
+                        </button> -->
+                        <h4>
+                            Quantity: {{item.quantity}}
+                        </h4>
+
                     
                 </div>
                </div>

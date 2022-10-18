@@ -3,6 +3,10 @@ import { CartItem } from '../cart-item';
 import { CartItemService } from '../cart-item.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { environment } from 'src/environments/environment';
+import { HttpClient } from '@angular/common/http';
+
+
 
 @Component({
   selector: 'app-cart-items',
@@ -11,7 +15,7 @@ import Swal from 'sweetalert2';
 })
 export class CartItemsComponent implements OnInit {
 
-  constructor(private cartSvc: CartItemService, private router:Router) { }
+  constructor(private cartSvc: CartItemService,private http : HttpClient, private router:Router) { this.url = this.carturl + "/"; }
   carts:CartItem={
     id:0,
     pname:'',
@@ -71,37 +75,44 @@ export class CartItemsComponent implements OnInit {
 
   
   // counterValue=this.cartData.reduce((item: any)=>(item.quantity));
-  counterValue=this.quantity;
+
   countLessThenOne=true;
   countMax=true;
+
   
   @Output() countEmmitter =new EventEmitter(); //4
 
   PostValue(){
-    this.countEmmitter.emit(this.counterValue);//4
+    this.countEmmitter.emit(this.cartData.quantity);//4
   }
+
+  url: string = ""
+  carturl = environment.cartapi;
 
   //increment and decrement 
 
   //Quantity -> 10
-  decrement(){
-    if(this.counterValue==1)
+  decrement(decrementitem : CartItem){
+
+    console.log("cart item in decrement" + decrementitem.quantity)
+    console.log("cart quantity :" +this.http.get(this.carturl + decrementitem.quantity))
+    if(true)
     {
       this.countLessThenOne=false;
     }
     else{
       this.countLessThenOne=true;
-      this.counterValue--;
+      this.carts.quantity--;
     }
     this.PostValue();
   }
 
   increment(){
-   if(this.counterValue==10){
+   if(this.carts.quantity==10){
      this.countMax=false;
    }
    else{
-    this.counterValue++;
+    this.carts.quantity++;
     this.countLessThenOne=true;
     this.countMax=false;
     this.PostValue();
