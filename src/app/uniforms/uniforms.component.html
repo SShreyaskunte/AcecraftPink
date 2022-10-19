@@ -85,7 +85,7 @@
     <div class="dropdown">
       <button class="dropbtn"
         style="padding: 30px ;">PRICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;BARND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;BRAND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GENDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRADE</button>
       <div class="dropdown-content">
@@ -97,9 +97,25 @@
     </div>
   </div>
   <div class="col-1"></div>
-
-  <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd">- 44 items</span>
+<div class="row">
+<div class="col-6">
+  <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd;">- 12 items</span>
   </h4>
+</div>
+<div class="col-6">
+  <div class="dropdown" style="margin-left:450px; margin-top: 20px; background-color: white;" >
+    <button class="dropbtn">Sort By</button>
+    <div class="dropdown-content">
+      <ul>
+        <li> <a [routerLink]="['/lowtohigh']" style="color: black;" >Low to high</a></li>
+        <li> <a [routerLink]="['/hightolow']" style="color: black;">High to Low</a></li>
+        <li> <a [routerLink]="['/ascending']" style="color: black;">Ascending</a></li>
+        <li> <a [routerLink]="['/descending']" style="color: black;">Descending</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
   <h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
 </div>
   <div class="row" style="margin-top: 50px ;">

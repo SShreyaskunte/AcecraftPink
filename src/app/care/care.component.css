@@ -40,9 +40,10 @@
 }
 
 .careImg img {
-    max-height: 400px;
+    max-height: 300px;
+    padding: 10px;
     margin: auto;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .careImg img:hover {

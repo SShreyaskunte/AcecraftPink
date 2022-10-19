@@ -66,5 +66,7 @@ export class UniformsComponent implements OnInit {
   //       () => console.log(deleteItem.pname)
   //     );
   // }
+ 
+
 
 }

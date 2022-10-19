@@ -1,0 +1,198 @@
+<style>
+    .dropbtn {
+        background-color: #f0f0f0;
+        color: rgb(0, 0, 0);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content pre {
+        color: black;
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s ease-in-out 0s,
+    }
+
+    .dropdown-content pre:hover {
+        background-color: #ddd;
+        transition-delay: 0s, 0s, 0.3s;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        transition-delay: 0s, 0s, 0.3s;
+    }
+
+    /* .dropdown:hover .dropbtn {background-color: #5f5f5f;} */
+</style>
+<div class="banner text-center">
+    <div class="proximaThin">Decode</div>
+    <div>your kind of designer uniforms.</div>
+</div>
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4"> -->
+<!--<div class="col" *ngFor="let product of alll">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let product of alll">
+      <a [routerLink]="['/proddetail']" (click)="addToCart(product)">
+      <div class="card h-100 text-center">
+        <img
+          src={{product.pimage}}
+          class="card-img-top text-center" alt="...">
+        <div class="card-body text-center">
+  
+          <p class="card-text"><b>{{product.pname}}</b></p>
+        </div>
+      </div>
+      </a>
+    </div> -->
+<!-- <label>Sort by &nbsp;</label>
+  <select [(ngModel)]='SortbyParam'>
+    <option value="Price">Price</option>
+  </select>
+  <button type="button" (click)="onSortDirection()">
+    <i *ngIf="SortDirection==='asc'" class="fas fa-sort-alpha-down"></i>
+    <i *ngIf="SortDirection==='desc'" class="fas fa-sort-alpha-up"></i>
+  </button> -->
+
+<!-- <div class="row">
+      <div *ngFor="let property of properties|sort:[SortbyParam,SortDirection]"
+    class="col-sm-4"> -->
+<!-- <div class="shadow-lg p-3 mb-4">
+          <app-property-card [property]="property"></app-property-card>
+      </div> -->
+
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10" style="text-align:center ; margin-top: 20px;margin-left: 90px ;">
+        <div class="dropdown">
+            <button class="dropbtn"
+                style="padding: 30px ;">PRICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;BRAND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GENDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRADE</button>
+            <div class="dropdown-content">
+                <pre>₹300 - ₹1075                           Acecraft                                         Boys                                     NHG Grade 1-4 </pre>
+                <pre>                                                                                                       Girls                                   NHG Grade 11-12 </pre>
+                <pre>                                                                                                                                                   NHG Grade 5-10 </pre>
+                <pre>                                                                                                                                         NHIS Nursery Grade 5 </pre>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+<div class="row">
+        <div class="col-6">
+          <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd;">- 6 items</span>
+          </h4>
+        </div>
+        <div class="col-6">
+          <div class="dropdown" style="margin-left:450px; margin-top: 20px; background-color: white;" >
+            <button class="dropbtn">Sort By</button>
+            <div class="dropdown-content">
+              <ul>
+                <li> <a [routerLink]="['/lowtohigh']" style="color: black;" >Low to high</a></li>
+                <li> <a [routerLink]="['/hightolow']" style="color: black;">High to Low</a></li>
+                <li> <a [routerLink]="['/ascending']" style="color: black;">Ascending</a></li>
+                <li> <a [routerLink]="['/descending']" style="color: black;">Descending</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+</div>
+<h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
+<div class="row" style="margin-top: 50px ;">
+    <div class="col">
+        <a [routerLink]="['/zipper']">
+            <div class="card h-100  border-0">
+                <img src="https://cdn4.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7104bb47db6b5e248fc5/webp/cisb-zipper-480x480.jpg"
+                    class="card-img-top" alt="..." style="height: 400px ;">
+                <div class="card-body text-center">
+
+                    <p class="card-text"><b>CIS Zippers (Grade 1-12)</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col">
+        <a [routerLink]="['/jumper']">
+            <div class="card h-100  border-0">
+                <img src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33869/images/5aa0f01491c2e5ab32f3386a/5aa0f01e91c2e5ab32f338a4/webp/5aa0f01e91c2e5ab32f338a4-480x480.jpg"
+                    class="card-img-top" alt="..." style="height: 400px ;">
+                <div class="card-body text-center">
+
+                    <p class="card-text">
+                        <b>NHG Jumpers [Girls, Grade 1-4]</b>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col">
+        <a [routerLink]="['/trousers']">
+            <div class="card h-100  border-0">
+                <img src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33832/images/5aa0f01491c2e5ab32f33833/5aa0f01e91c2e5ab32f338a1/webp/5aa0f01e91c2e5ab32f338a1-640x640.jpg"
+                    class="card-img-top" alt="..." style="height: 400px ;">
+                <div class="card-body text-center">
+                    <p class="card-text"><b>NH Trousers [Boys]</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <a [routerLink]="['/cis6']">
+            <div class="card h-100  border-0">
+                <img src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601ba70c7779a13e481409f5/webp/t4-1-480x480.png"
+                    class="card-img-top" alt="..." style="height: 400px ;">
+                <div class="card-body text-center">
+
+                    <p class="card-text"><b>CIS House T-Shirt (Red)</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col">
+        <a [routerLink]="['/yellow']">
+            <div class="card h-100  border-0">
+                <img src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg"
+                    class="card-img-top" alt="..." style="height: 400px ;">
+                <div class="card-body text-center">
+
+                    <p class="card-text"><b>CIS House T-Shirt (Yellow)</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col">
+        <a [routerLink]="['/nhis']">
+            <div class="card h-100 text-center  border-0">
+                <img src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
+                    class="card-img-top text-center" alt="..." style="height: 400px ;">
+                <div class="card-body text-center">
+
+                    <p class="card-text"><b>NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -13,4 +13,29 @@ a, a i, a span, a:hover, button, button i {
     cursor: pointer !important;
 }
 
+i#arrow{
+    font-family: FontAwesome;
+    font-style: normal;
+    padding: 20px;
+}
+
+i#arrow{
+    
+    transition: all 0.3s ease;
+    animation: block-link-arrow-down 1.5s infinite;
+    -webkit-animation: block-link-arrow-down 1.5s infinite;
+    -moz-animation: block-link-arrow-down 1.5s infinite;
+    display: inline-block;
+    font-size: 16px;
+} @keyframes block-link-arrow-down {
+    0%,100%
+    {
+        transform: translatex(0);
+    }
+    45% 
+    {
+        transform: translatex(-20px);
+    }
+   
+}
 

@@ -52,6 +52,10 @@ import { TermsComponent } from './terms/terms.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { CareComponent } from './care/care.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { LowtohighComponent } from './lowtohigh/lowtohigh.component';
+import { HightolowComponent } from './hightolow/hightolow.component';
+import { AscendingComponent } from './ascending/ascending.component';
+import { DescendingComponent } from './descending/descending.component';
 
 
 
@@ -105,7 +109,11 @@ import { ShippingComponent } from './shipping/shipping.component';
     TermsComponent,
     PaymentsComponent,
     CareComponent,
-    ShippingComponent
+    ShippingComponent,
+    LowtohighComponent,
+    HightolowComponent,
+    AscendingComponent,
+    DescendingComponent
     
 
   ],

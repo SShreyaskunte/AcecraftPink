@@ -33,6 +33,22 @@ export class CartItemsComponent implements OnInit {
   totalprice: number = 0;
   quantity: number = 1;
 
+  receivequantity($event: number) {  
+    this.quantity = $event;  
+    }
+
+    totalPrices(data:any) {
+      debugger  
+          this.totalprice=0;
+         this.cartData=data    
+          console.log(this.cartData);  
+         for(let j=0;j<data.length;j++){   
+         this.totalprice+= (this.cartData[j].price +this.cartData[j].quantity )
+               console.log(this.cartData[j].quantity)  
+          }  
+          return this.totalprice;
+    }
+
   totalPrice(data: any) {
     debugger
     const intialValue = 0;
@@ -40,7 +56,20 @@ export class CartItemsComponent implements OnInit {
     const a = this.cartData.reduce((sum: any, item: any) => sum + (item.price * item.quantity), intialValue);
     return a;
   }
+
   cart: CartItem[] = [];
+
+  updateToCart(cart:CartItem){
+    console.log(this.quantity)
+    this.carts.id=cart.id;
+   this.carts.totalPrice=(cart.price * this.quantity);
+    this.carts.quantity=this.quantity;
+    this.cartSvc.updateCart(this.carts).subscribe(
+      ()=>console.log("update successfully")
+    )
+ 
+    this.ngOnInit();
+  }
 
   delete(deleteItem: CartItem) {
     this.cartSvc.removeItemFromCart(deleteItem).subscribe(
@@ -60,6 +89,7 @@ export class CartItemsComponent implements OnInit {
     })
     this.ngOnInit();
   }
+
   onClick(){
     this.router.navigate(['allproducts'])
   }
@@ -72,12 +102,7 @@ export class CartItemsComponent implements OnInit {
       }
     )
   }
-
-  
   // counterValue=this.cartData.reduce((item: any)=>(item.quantity));
-
-  countLessThenOne=true;
-  countMax=true;
 
   
   @Output() countEmmitter =new EventEmitter(); //4
@@ -88,40 +113,4 @@ export class CartItemsComponent implements OnInit {
 
   url: string = ""
   carturl = environment.cartapi;
-
-  //increment and decrement 
-
-  //Quantity -> 10
-  onChange(event : any)
-  {
-    this.quantity = event.target.value;
-  }
-
-  decrement(decrementitem : CartItem){
-
-    console.log("cart item in decrement" + decrementitem.quantity)
-    console.log("cart quantity :" +this.http.get(this.carturl + decrementitem.quantity))
-    if(true)
-    {
-      this.countLessThenOne=false;
-    }
-    else{
-      this.countLessThenOne=true;
-      this.carts.quantity--;
-    }
-    this.PostValue();
-  }
-
-  increment(){
-   if(this.carts.quantity==10){
-     this.countMax=false;
-   }
-   else{
-    this.carts.quantity++;
-    this.countLessThenOne=true;
-    this.countMax=false;
-    this.PostValue();
-   }
-  }
-
 }

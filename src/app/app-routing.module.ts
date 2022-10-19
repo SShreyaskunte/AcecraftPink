@@ -34,8 +34,16 @@ import { NHTrousersComponent } from './nhtrousers/nhtrousers.component';
 import { BluehouseComponent } from './bluehouse/bluehouse.component';
 import { GetintouchComponent } from './enterprise/getintouch/getintouch.component'; 
 import { AddressComponent } from './address/address.component';
-
-
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CareComponent } from './care/care.component';
+import { ReturnsComponent } from './returns/returns.component';
+import { ProductionComponent } from './production/production.component';
+import { TermsComponent } from './terms/terms.component';
+import { GetHelpComponent } from './get-help/get-help.component';
+import { LowtohighComponent } from './lowtohigh/lowtohigh.component';
+import { HightolowComponent } from './hightolow/hightolow.component';
+import { AscendingComponent } from './ascending/ascending.component';
+import { DescendingComponent } from './descending/descending.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -69,7 +77,18 @@ const routes: Routes = [
   {path:'zipper',component:CISZippersComponent},
   {path:'trousers',component:NHTrousersComponent},
   {path:'blue',component:BluehouseComponent},
-  {path:'getintouch',component:GetintouchComponent}
+  {path:'getintouch',component:GetintouchComponent},
+  {path:'about-us',component:AboutUsComponent},
+  {path:'care',component:CareComponent},
+  {path:'returns',component:ReturnsComponent},
+  {path:'production',component:ProductionComponent},
+  {path:'terms-condition',component:TermsComponent},
+  {path:'get-helps',component:GetHelpComponent},
+  {path:'lowtohigh',component:LowtohighComponent},
+  {path:'hightolow',component:HightolowComponent},
+  {path:'ascending',component:AscendingComponent},
+  {path:'descending',component:DescendingComponent}
+
 ];
 
 @NgModule({
