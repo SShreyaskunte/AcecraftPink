@@ -17,7 +17,7 @@
             <p><strong style="font-size:40px ;">₹605</strong>&nbsp;<del>₹910</del></p>
             <p style="background-color: black; color:white; width: 85px ; margin-left: 40px; padding:10px ;">24% OFF</p>
             <hr>
-            <button class="btn btn-dark" onclick="child()">SIZE GUIDE</button>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#sizeModal">SIZE GUIDE</button>
             <br><br><br>
             <label style="background-color: black; color:white; height: 25px ; width: 80px; text-align: center;"> <p>Size</p></label>
             <select class="dropdown" [(ngModel)]="size">
@@ -93,3 +93,17 @@
 
 
     <app-footer></app-footer>
+
+    <div class="modal fade" id="sizeModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Size Guide</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <img style="width: 90%;height:750px" ng-if=" product.metafields.size_chart" ms-data-valign="middle" ms-data-halign="center" class="ms-w-full img-responsive ng-scope" ms-data-placeholder-html="<div class=&quot;img-place-holder&quot;><table><tr><td>Name:size_chart<br> Ratio : 2:1</td></tr></table></div>" ms-data-aspect-ratio="1:1" ng-src="//cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.size_charts/5aa7e7594bf31edb65fee6b9/webp/5aa7e74f4a34c6db5f233a13-1024x1024.jpg" alt="SIZE GUIDE" src="//cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.size_charts/5aa7e7594bf31edb65fee6b9/webp/5aa7e74f4a34c6db5f233a13-1024x1024.jpg">    </div>

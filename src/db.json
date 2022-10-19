@@ -65,8 +65,8 @@
       "size": "18",
       "price": "340",
       "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-640x640.jpg",
-      "quantity": 1,
-      "totalPrice": 340
+      "quantity": 2,
+      "totalPrice": 680
     }
   ],
   "products": [
@@ -99,8 +99,8 @@
     {
       "id": 1,
       "sname": "Suman Bangera",
-      "contact": 9876543234,
-      "address": "Yermal, Mangalore, Karnataka- 575001"
+      "contact": "9876543235",
+      "address": "Yermal, Mangalore, Karnataka- 575002"
     },
     {
       "id": 2,

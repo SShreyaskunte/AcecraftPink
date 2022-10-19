@@ -1,6 +1,6 @@
 <style>
   .dropbtn {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 16px;
     font-size: 16px;
@@ -17,7 +17,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -81,7 +81,7 @@
 
 <div class="row">
   <div class="col-1"></div>
-  <div class="col-10" style="text-align:center ; margin-top: 20px;margin-left: 90px ;">
+  <div class="col-10" style="text-align:center ; margin-top: 20px;margin-left: 50px ;">
     <div class="dropdown">
       <button class="dropbtn"
         style="padding: 30px ;">PRICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -103,7 +103,7 @@
   </h4>
 </div>
 <div class="col-6">
-  <div class="dropdown" style="margin-left:450px; margin-top: 20px; background-color: white;" >
+  <!-- <div class="dropdown" style="margin-left:450px; margin-top: 20px; background-color: white;" >
     <button class="dropbtn">Sort By</button>
     <div class="dropdown-content">
       <ul>
@@ -113,12 +113,38 @@
         <li> <a [routerLink]="['/descending']" style="color: black;">Descending</a></li>
       </ul>
     </div>
-  </div>
+  </div> -->
+  <select class="mt-5" (change)='onOptionsSelected($event)' style="margin-left: 60%;">
+    <option value="org" style="font-family:'Times New Roman', Times, serif ;" >Sort By:</option>
+    <option value="lth" style="font-family:'Times New Roman', Times, serif ;">Price : Low to High</option>
+    <option value="htl" style="font-family:'Times New Roman', Times, serif ;">Price : High to Low</option>
+    <option value="nasc" style="font-family:'Times New Roman', Times, serif ;">Name : Ascending Order</option>
+    <option value="ndesc" style="font-family:'Times New Roman', Times, serif ;">Name : Descending Order</option>
+  </select>
 </div>
 </div>
   <h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
 </div>
-  <div class="row" style="margin-top: 50px ;">
+<div class="row">
+  <ul [ngSwitch]="optionSelected">
+    <li *ngSwitchCase="'org'">
+    </li>
+    <li *ngSwitchCase="'lth'">
+      <app-lowtohigh></app-lowtohigh>
+    </li>
+    <li *ngSwitchCase="'htl'">
+      <app-hightolow></app-hightolow>
+    </li>
+    <li *ngSwitchCase="'nasc'">
+      <app-ascending></app-ascending>
+    </li>
+    <li *ngSwitchCase="'ndesc'">
+      <app-descending></app-descending>
+    </li>
+    <li *ngSwitchDefault></li>
+  </ul>
+</div>
+  <div class="row" *ngIf="!option" style="margin-top: 50px ;">
     <div class="col">
       <a [routerLink]="['/nhis']">
         <div class="card h-100 text-center  border-0">
@@ -163,7 +189,7 @@
     </div>
   </div>
 
-<div class="row">
+<div class="row" *ngIf="!option">
   <div class="col">
     <a [routerLink]="['/cis4']">
       <div class="card h-100  border-0">
@@ -205,7 +231,7 @@
     </a>
   </div>
 </div>
-<div class="row">
+<div class="row" *ngIf="!option">
   <div class="col">
     <a [routerLink]="['/cis7']">
       <div class="card h-100  border-0">
@@ -248,7 +274,7 @@
     </a>
   </div>
 </div>
-<div class="row">
+<div class="row" *ngIf="!option">
   <div class="col">
     <a [routerLink]="['/zipper']">
       <div class="card h-100  border-0">

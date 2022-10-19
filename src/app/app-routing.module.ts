@@ -44,6 +44,9 @@ import { LowtohighComponent } from './lowtohigh/lowtohigh.component';
 import { HightolowComponent } from './hightolow/hightolow.component';
 import { AscendingComponent } from './ascending/ascending.component';
 import { DescendingComponent } from './descending/descending.component';
+import { PaymentsComponent } from './payments/payments.component';
+import { ShippingComponent } from './shipping/shipping.component';
+import { OthersComponent } from './others/others.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -87,7 +90,10 @@ const routes: Routes = [
   {path:'lowtohigh',component:LowtohighComponent},
   {path:'hightolow',component:HightolowComponent},
   {path:'ascending',component:AscendingComponent},
-  {path:'descending',component:DescendingComponent}
+  {path:'descending',component:DescendingComponent},
+  {path:'payment',component:PaymentsComponent},
+  {path:'shipping',component:ShippingComponent},
+  {path:'others',component:OthersComponent}
 
 ];
 

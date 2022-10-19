@@ -125,3 +125,71 @@ position: static;
     margin-left: 0;
     margin-right: 0;
 }
+
+.button1:hover{
+    background-color: #212529;
+    outline: #fff;
+    color:#fff;
+  }
+  button.btn-primary[type="submit"] {
+    width: 100%;
+    border-radius: 30px;
+    border-width: 3px;
+    border-color: grey;
+    background-color: #555;
+  }
+  modal-title {
+      margin: 0;
+      line-height: 1.428571429;
+    }
+    .text-center {
+      text-align: center;
+    }
+    /* .modal-title, .modal-header .close span {
+      color: #000;
+      margin: 15px auto 0 !important;
+      max-width: 400px;
+      font-weight: bold;
+      font-size: 24px;
+    } */
+    .modal-title {
+      margin: 0;
+      line-height: 1.428571429;
+    }
+    .btn-close{
+      background-color: #fff;
+      border: none;
+      font-size: 20px;
+    }
+    
+    input{
+      margin-top: -22px;
+    }
+    #radio{
+      position: relative;
+      top:2px;
+    }
+    .modal-body .icon-user::before {
+      content: '\e920';
+    }
+    .modal-body .form-group::before {
+      top: 18px;
+      left: 12px;
+      color: #ccc;
+      font-size: 25px;
+    }
+    label{
+      display: inline-block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: red;
+    }
+    .btn-secondary{
+      background-color:  #555454;
+      width: 100%;
+      border-radius: 30px;
+      border: 3px solid #969595;
+      padding: 1px;
+      margin-top: 2%;
+    
+    }
