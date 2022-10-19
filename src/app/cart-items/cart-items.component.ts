@@ -21,7 +21,7 @@ export class CartItemsComponent implements OnInit {
     pname:'',
     // product_code:'',
     // pdesc:'',
-    price:0,
+    price:1,
     size:1,
     // length:1,
     // waist:1,
@@ -30,8 +30,23 @@ export class CartItemsComponent implements OnInit {
     totalPrice:1    
   }
   cartData: any = [];
-  totalprice: number = 0;
+  totalprice: number = 1;
   quantity = 1;
+
+  receivequantity($event: number) {  
+    this.quantity = $event;  
+    } 
+  //  totalPrices(data:any) {
+  //    debugger  
+  //        this.totalprice=0;
+  //       this.cartData=data    
+  //        console.log(this.cartData);  
+  //       for(let j=0;j<data.length;j++){   
+  //       this.totalprice+= (this.cartData[j].price +this.cartData[j].quantity )
+  //             console.log(this.cartData[j].quantity)  
+  //        }  
+  //        return this.totalprice;
+  //  }
 
   totalPrice(data: any) {
     debugger
@@ -41,6 +56,29 @@ export class CartItemsComponent implements OnInit {
     return a;
   }
   cart: CartItem[] = [];
+
+  totalPrices(cart:CartItem){
+    this.carts.totalPrice = cart.quantity * cart.price;
+    return this.carts.totalPrice;
+  }
+  updateToCart(cart:CartItem){
+    console.log(this.quantity)
+
+    this.carts.id=cart.id;
+  
+   this.carts.totalPrice=(cart.price * this.quantity);
+  
+    this.carts.quantity=this.quantity;
+  
+    this.cartSvc.updateCart(this.carts).subscribe(
+      ()=>console.log("update successfully")
+ 
+    
+      
+    )
+ 
+    this.ngOnInit();
+  }
 
   delete(deleteItem: CartItem) {
     this.cartSvc.removeItemFromCart(deleteItem).subscribe(
@@ -61,7 +99,7 @@ export class CartItemsComponent implements OnInit {
     this.ngOnInit();
   }
   onClick(){
-    this.router.navigate(['allproducts'])
+    this.router.navigate(['uniform'])
   }
 
   ngOnInit(): void {

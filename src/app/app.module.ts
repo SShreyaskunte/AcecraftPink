@@ -41,6 +41,8 @@ import { BluehouseComponent } from './bluehouse/bluehouse.component';
 import { SortPipe } from './Pipes/sort.pipe';
 import { AddressComponent } from './address/address.component';
 import { GetintouchComponent } from './enterprise/getintouch/getintouch.component';
+import { LowtohighComponent } from './lowtohigh/lowtohigh.component';
+import { HightolowComponent } from './hightolow/hightolow.component';
 
 
 
@@ -83,7 +85,9 @@ import { GetintouchComponent } from './enterprise/getintouch/getintouch.componen
     BluehouseComponent,
     SortPipe,
     AddressComponent,
-    GetintouchComponent
+    GetintouchComponent,
+    LowtohighComponent,
+    HightolowComponent
     
 
   ],

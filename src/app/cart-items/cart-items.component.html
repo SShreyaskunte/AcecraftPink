@@ -5,7 +5,12 @@
 </div>-->
 <div class="container-fluid">
     <div class="container"> 
+        <span *ngIf="totalPrice(cart)===0"><h1>Cart Is Empty</h1>
+            <a class="btn btn-outline-dark m-3" (click)="onClick()">Continue Shopping</a></span>
+        
+
        <h1>Your bag total is {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1>
+       
        <hr>
         
        <!-- <div class="container" *ngFor="let item of cart"> -->
@@ -20,23 +25,15 @@
                <div class="col-2 col-sm mt-3 text-center justify-content-center">
                 <div style="text-align: center;">
                     
-                        <!-- <button class="btn" [disabled]="!countLessThenOne" (click)="decrement(item);">
-                            <i class="fa-solid fa-minus"></i>
-                        </button>
-                        <input type="button" class="btn btn-light"  [value]="item.quantity">
-                        <button class="btn" (click)="increment();">
-                            <i class="fa-solid fa-plus"></i>
-                        </button> -->
-                        <h4>
-                            Quantity: {{item.quantity}}
-                        </h4>
-
+                      
+                        <app-counterchild [counterValue]="item.quantity" (quantityEmitter)="receivequantity($event)"
+                        (click)="updateToCart(item)"></app-counterchild>
                     
                 </div>
                </div>
                <div class="col-2 col-sm mt-3 text-center">
                    <!-- <h3>{{}}</h3> -->
-                   <h3 style="margin-left: 25%;"> {{item.price | currency:'INR'}}</h3>
+                   <h3 style="margin-left: 25%;">{{totalPrices(item) | currency:'INR'}}</h3>
                    <a class="text-danger mt-3" (click)="delete(item)" style="text-align: center; margin-left: 40%;">Remove</a>
                </div>
                <hr class="mt-2">

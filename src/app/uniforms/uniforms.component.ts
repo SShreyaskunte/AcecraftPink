@@ -41,6 +41,14 @@ export class UniformsComponent implements OnInit {
   ngOnInit(): void {
      
   }
+  option:boolean=false;
+  optionSelected:any;
+onOptionsSelected(event: any){
+    console.log(event.target.value);
+
+    this.optionSelected = event.target.value;
+    this.option = true;
+}
  
 
   // detailview(detailviewProd: (string | undefined)[])

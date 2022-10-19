@@ -17,25 +17,25 @@ export class CounterchildComponent implements OnInit {
   @Output() countEmitter = new EventEmitter();
   @Output() quantityEmitter = new EventEmitter();
 
-  carts:CartItem={
-    id:0,
-    pname:'',
-    // product_code:'',
-    // pdesc:'',
-    price:0,
-    size:1,
-    // length:1,
-    // waist:1,
-    pimage:'',
-    quantity:1,
-    totalPrice:1    
-  }
+  // carts:CartItem={
+  //   id:0,
+  //   pname:'',
+  //   // product_code:'',
+  //   // pdesc:'',
+  //   price:0,
+  //   size:1,
+  //   // length:1,
+  //   // waist:1,
+  //   pimage:'',
+  //   quantity:1,
+  //   totalPrice:1    
+  // }
 
-  cartData: any = [];
-  totalprice: number = 0;
-  quantity = 1;
+  // cartData: any = [];
+  // totalprice: number = 0;
+  // quantity = 1;
 
-  cart: CartItem[] = [];
+  // cart: CartItem[] = [];
 
   PostData() {
     this.countEmitter.emit(this.counterValue);

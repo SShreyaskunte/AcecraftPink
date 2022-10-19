@@ -96,58 +96,95 @@
       </div>
     </div>
   </div>
-  <div class="col-1"></div>
+  <div class="row">
+    <div class="col-8"></div>
 
-  <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd">- 44 items</span>
-  </h4>
-  <h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
-</div>
-  <div class="row" style="margin-top: 50px ;">
-    <div class="col">
-      <a [routerLink]="['/nhis']">
-        <div class="card h-100 text-center  border-0">
-          <img
-            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
-            class="card-img-top text-center" alt="..." style="height: 400px ;">
-          <div class="card-body text-center">
+    <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd">- 44 items</span>
+    </h4>
+    <h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
+  </div>
+  <div class="col-4">
+    <select (change)='onOptionsSelected($event)'>
+      <option>Sort By:</option>
+      <option value="lth">Price : Low to High</option>
+      <option value="htl">Price : High to Low</option>
+      <option value="nasc">Name : Ascending Order</option>
+      <option value="ndesc">Name : Descending Order</option>
+    </select>
 
-            <p class="card-text"><b>NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]</b></p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col">
-      <a [routerLink]="['/cisroyal']">
-        <div class="card h-100  border-0">
-          <img
-            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
-            class="card-img-top" alt="..." style="height: 400px ; width: 400px ;">
-          <div class="card-body text-center">
-
-            <p class="card-text text-center">
-              <b>CIS Royal Day Wear (Grade 1-5)</b>
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col">
-      <a [routerLink]="['/nhg3']">
-        <div class="card h-100  border-0">
-          <img
-            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
-            class="card-img-top" alt="..." style="height: 400px ;width: 400px ;">
-          <div class="card-body text-center">
-
-            <p class="card-text"><b>NHG Shirt [Girls, Grade 1-10]</b></p>
-          </div>
-        </div>
-      </a>
+    <ul [ngSwitch]="optionSelected">
+      <li *ngSwitchCase="'lth'">
+        <app-lowtohigh></app-lowtohigh>
+      </li>
+      <li *ngSwitchCase="'htl'">
+        <!-- <app-b></app-b> -->
+      </li>
+      <li *ngSwitchCase="'nasc'">
+        <!-- <app-c></app-c> -->
+      </li>
+      <li *ngSwitchCase="'ndesc'">
+        <!-- <app-d></app-d> -->
+      </li>
+      <li *ngSwitchDefault></li>
+    </ul>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
     </div>
   </div>
+</div>
+<div class="row" style="margin-top: 50px ;" *ngIf="!option">
+  <div class="col">
+    <a [routerLink]="['/nhis']">
+      <div class="card h-100 text-center  border-0">
+        <img
+          src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
+          class="card-img-top text-center" alt="..." style="height: 400px ;">
+        <div class="card-body text-center">
 
-<div class="row">
+          <p class="card-text"><b>NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]</b></p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col">
+    <a [routerLink]="['/cisroyal']">
+      <div class="card h-100  border-0">
+        <img
+          src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
+          class="card-img-top" alt="..." style="height: 400px ; width: 400px ;">
+        <div class="card-body text-center">
+
+          <p class="card-text text-center">
+            <b>CIS Royal Day Wear (Grade 1-5)</b>
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col">
+    <a [routerLink]="['/nhg3']">
+      <div class="card h-100  border-0">
+        <img
+          src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+          class="card-img-top" alt="..." style="height: 400px ;width: 400px ;">
+        <div class="card-body text-center">
+
+          <p class="card-text"><b>NHG Shirt [Girls, Grade 1-10]</b></p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="row" *ngIf="!option">
   <div class="col">
     <a [routerLink]="['/cis4']">
       <div class="card h-100  border-0">
@@ -189,7 +226,7 @@
     </a>
   </div>
 </div>
-<div class="row">
+<div class="row" *ngIf="!option">
   <div class="col">
     <a [routerLink]="['/cis7']">
       <div class="card h-100  border-0">
@@ -232,7 +269,7 @@
     </a>
   </div>
 </div>
-<div class="row">
+<div class="row" *ngIf="!option">
   <div class="col">
     <a [routerLink]="['/zipper']">
       <div class="card h-100  border-0">
