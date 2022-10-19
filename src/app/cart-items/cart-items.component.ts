@@ -37,16 +37,9 @@ export class CartItemsComponent implements OnInit {
     this.quantity = $event;  
     }
 
-    totalPrices(data:any) {
-      debugger  
-          this.totalprice=0;
-         this.cartData=data    
-          console.log(this.cartData);  
-         for(let j=0;j<data.length;j++){   
-         this.totalprice+= (this.cartData[j].price +this.cartData[j].quantity )
-               console.log(this.cartData[j].quantity)  
-          }  
-          return this.totalprice;
+    totalPrices(cart:CartItem){
+      this.carts.totalPrice = cart.quantity * cart.price;
+      return this.carts.totalPrice;
     }
 
   totalPrice(data: any) {

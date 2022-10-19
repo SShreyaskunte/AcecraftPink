@@ -60,30 +60,13 @@
   ],
   "cart": [
     {
-      "id": "2",
-      "pname": "CIS Royal Day Wear (Grade 1-5)",
-      "size": 1,
-      "price": "450",
-      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
-      "quantity": 2,
-      "totalPrice": 900
-    },
-    {
-      "id": "3",
-      "pname": "NHG Shirt [Girls, Grade 1-10]",
-      "size": 1,
-      "price": "355",
-      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg",
-      "quantity": 1,
-      "totalPrice": 355
-    },
-    {
       "id": "1",
       "pname": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
-      "size": "20",
+      "size": "18",
       "price": "340",
       "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-640x640.jpg",
-      "quantity": 4
+      "quantity": 1,
+      "totalPrice": 340
     }
   ],
   "products": [
