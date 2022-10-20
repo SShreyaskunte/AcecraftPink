@@ -44,9 +44,10 @@ p.signature::after, p.signature::before {
     border-color: #000;
   }
   
-  modal-title {
+  .modal-title{
     margin: 0;
     line-height: 1.428571429;
+    text-align: center;
   }
   .text-center {
     text-align: center;
@@ -67,8 +68,15 @@ p.signature::after, p.signature::before {
     border: none;
     font-size: 20px;
   }
-  .modal-body .form-group label {
-    left: 0px;
+  modal-title {
+    margin: 0;
+    line-height: 1.428571429;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* .modal-body .form-group label { */
+    /* left: 0px;
     top: 23px;
     position: relative;
     color: #b3b3b3;
@@ -83,8 +91,8 @@ p.signature::after, p.signature::before {
     padding-top: 0px;
     padding-right: 10px;
     padding-bottom: 10px;
-    padding-left: 46px;
-  }
+    padding-left: 46px; */
+  /* } */
   input{
     margin-top: -22px;
   }
@@ -103,9 +111,10 @@ p.signature::after, p.signature::before {
   }
   label{
     display: inline-block;
-     margin-bottom: 5px; 
+    margin-bottom: 5px;
     font-weight: bold;
-  } 
+    color: red;
+  }
   .btn-secondary{
     background-color:  #555454;
     width: 100%;
@@ -115,4 +124,3 @@ p.signature::after, p.signature::before {
     margin-top: 2%;
   
   }
-  

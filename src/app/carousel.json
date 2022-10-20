@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "pname": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
+        "product_code": "NHISDWT18",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 350,
+        "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-640x640.jpg"
+    },
+    {
+        "id": 2,
+        "pname": "CIS Royal Day Wear (Grade 1-5)",
+        "product_code": "CIEDPT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 450,
+        "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
+    },
+    {
+        "id": 3,
+        "pname": "NHG Shirt [Girls, Grade 1-10]",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+    },
+    {
+        "id": 4,
+        "pname": "CIS Sky Day Wear (Grade 6-8)",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg"
+    },
+    {
+        "id": 5,
+        "pname": "CIS White Day Wear (Grade 9 & 10))",
+        "product_code": "CIMDPT26",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
+    },
+    {
+        "id": 6,
+        "pname": "CIS House T-Shirt (Red)",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601ba70c7779a13e481409f5/webp/t4-1-480x480.png"
+    },
+    {
+        "id": 7,
+        "pname": "CIS Day Wear Shorts",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d708bcbfb666ae1149973/webp/cisb-shorts-480x480.jpg"
+    },
+    {
+        "id": 8,
+        "pname": "NHG Jumpers [Girls, Grade 1-4]",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33869/images/5aa0f01491c2e5ab32f3386a/5aa0f01e91c2e5ab32f338a4/webp/5aa0f01e91c2e5ab32f338a4-480x480.jpg"
+    },
+    {
+        "id": 9,
+        "pname": "CIS House T-Shirt (Yellow)",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg"
+    },
+    {
+        "id": 10,
+        "pname": "CIS Zippers (Grade 1-12)",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn4.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7104bb47db6b5e248fc5/webp/cisb-zipper-480x480.jpg"
+    },
+    {
+        "id": 11,
+        "pname": "NH Trousers [Boys]",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33832/images/5aa0f01491c2e5ab32f33833/5aa0f01e91c2e5ab32f338a1/webp/5aa0f01e91c2e5ab32f338a1-640x640.jpg"
+    },
+    {
+        "id": 12,
+        "pname": "NHG Blue House Tshirt [Jal, Grade 1-10]",
+        "product_code": "NHGSHRT20",
+        "pdesc": "Made from Poly-cotton.Polo Tshirt.Short sleeves.",
+        "price": 550,
+        "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33874/images/5aa0f01491c2e5ab32f33875/5aa0f02091c2e5ab32f338b4/webp/5aa0f02091c2e5ab32f338b4-480x480.jpg"
+    }
+        
+]

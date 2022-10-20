@@ -1,0 +1,12 @@
+.container.terms-page {
+    padding: 0px 15px 0;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: black;
+    color:#978f8f;
+}

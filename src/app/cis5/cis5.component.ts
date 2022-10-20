@@ -3,6 +3,7 @@ import { CartItem } from '../cart-item';
 import { CartItemService } from '../cart-item.service';
 import Swal from 'sweetalert2';
 import { environment } from 'src/environments/environment';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-cis5',
@@ -10,6 +11,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./cis5.component.css']
 })
 export class CIS5Component implements OnInit {
+  responsiveOptions:any;
 
   constructor(private cartsvc:CartItemService) { }
 
@@ -27,6 +29,23 @@ export class CIS5Component implements OnInit {
 
 
   ngOnInit(): void {
+    this.responsiveOptions = [
+      {
+          breakpoint: '1024px',
+          numVisible: 3,
+          numScroll: 3
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 2,
+          numScroll: 2
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1,
+          numScroll: 1
+      }
+    ];
   }
 
   quantity:number=1;

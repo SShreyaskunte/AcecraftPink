@@ -1,0 +1,98 @@
+.helpBox {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid white;
+    }
+    .banner .container{
+    position: absolute;
+    bottom: 2%;
+    overflow: hidden;
+    left: calc((100vw - 1120px)/2);
+    }
+    .helpBox h5 {
+    font-family: proxima-Bold;
+    font-size: 20px;
+    overflow: hidden;
+    }
+    .proximaThin {
+        font-family: "proxima-thin";
+        color: #978f8f;
+        font-size: 18px;
+    }
+    .proximaBold {
+        font-family: "proxima-bold";
+        color: #978f8f;
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    .contact1, .contact2 {
+    padding: 30px 20px;
+    background: #f2f6fc;
+    overflow: hidden;
+    }
+    .contactbox {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background: #000;
+    overflow: hidden;
+    }
+    .phone, .mail {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-12.png);
+    vertical-align: middle;
+    background-size: 180%;
+    background-position: center;
+    }
+    .mail {
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/care-icon-13.png);
+    }
+    .contactbox h3 {
+    margin: 10px 0;
+    }
+    .get-help {
+    background: #f2f6fc;
+    }
+    @media (min-width: 320px) and (max-width: 989px) {
+    .banner img {
+    display: none;
+    width: 100%;
+    }
+    .banner .container {
+    position: static;
+    text-align: center;
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/MJK07160_new.jpg);
+    background-size: contain;
+    background-position: -160px;
+    }
+    }
+    @media (min-width:900px) and (max-width: 1270px) {
+    .banner .container {
+    left: 10px;
+    width: 100%;
+    height: fit-content;
+    }
+    }
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: h -100px;
+    }
+    a{
+        color:#fff;
+        font-size: 18px;
+        font-family: "proxima-bold";
+    }
+    a:hover{
+        color:#000;
+    }
+    .row{
+        margin: auto;
+        padding: auto;
+    }

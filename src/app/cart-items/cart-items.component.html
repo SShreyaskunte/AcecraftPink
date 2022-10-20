@@ -9,8 +9,8 @@
             <a class="btn btn-outline-dark m-3" (click)="onClick()">Continue Shopping</a></span>
         
 
-       <h1>Your bag total is {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1>
        
+       <h1 *ngIf="totalPrice(cart) !=0">Your bag total is {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1>
        <hr>
         
        <!-- <div class="container" *ngFor="let item of cart"> -->
@@ -28,6 +28,7 @@
                       
                         <app-counterchild [counterValue]="item.quantity" (quantityEmitter)="receivequantity($event)"
                         (click)="updateToCart(item)"></app-counterchild>
+                
                     
                 </div>
                </div>
@@ -35,13 +36,14 @@
                    <!-- <h3>{{}}</h3> -->
                    <h3 style="margin-left: 25%;">{{totalPrices(item) | currency:'INR'}}</h3>
                    <a class="text-danger mt-3" (click)="delete(item)" style="text-align: center; margin-left: 40%;">Remove</a>
+                  
                </div>
                <hr class="mt-2">
            </div>
         
        <!-- </div> -->
        <!-- https://rzp.io/i/J7OJXSP9KE -->
-       <div class="row">
+       <div class="row" *ngIf="totalPrice(cart) !=0">
            <div class="col-lg-8 text-center">
             <h3 class="text-secondary" style="font-size: 25px; font-weight: inherit;">Sub Total:</h3>
             <br>
@@ -54,12 +56,12 @@
                    <br>
                    <h3>{{totalPrice(cart)|currency:'INR'}}</h3>
                    <div style="justify-content: right;">
-                   <a class="btn btn-outline-dark m-3" (click)="onClick()">Continue Shopping</a>
-                   <a class="btn btn-outline-dark m-3" href="https://razorpay.com/" target="_blank">Place Order</a>
+                    <a class="btn btn-outline-dark m-3" [routerLink]="['/uniform']">Continue Shopping</a>
+                    <a class="btn btn-outline-dark m-3" href="https://razorpay.com/" target="_blank">Place Order</a>
                
                </div>
            </div>
        </div>
-      
     </div> 
 </div>
+<app-footer></app-footer>

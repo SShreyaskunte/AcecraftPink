@@ -6,6 +6,7 @@ import * as all from 'src/app/uniforms/products.json';
 import { environment } from 'src/environments/environment';
 
 
+
 @Component({
   selector: 'app-uniforms',
   templateUrl: './uniforms.component.html',
@@ -74,5 +75,7 @@ onOptionsSelected(event: any){
   //       () => console.log(deleteItem.pname)
   //     );
   // }
+ 
+
 
 }

@@ -5,6 +5,9 @@ import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
+// import { Observable } from 'rxjs';
+// import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { UserServiceService } from '../user-service.service';
 
 
 
@@ -13,9 +16,10 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './cart-items.component.html',
   styleUrls: ['./cart-items.component.css']
 })
-export class CartItemsComponent implements OnInit {
+export class CartItemsComponent implements OnInit{
+  isAuthenticated: boolean = false;
 
-  constructor(private cartSvc: CartItemService,private http : HttpClient, private router:Router) { this.url = this.carturl + "/"; }
+  constructor(private cartSvc: CartItemService,private http : HttpClient, private router:Router, private authService: UserServiceService,) { this.url = this.carturl + "/"; }
   carts:CartItem={
     id:0,
     pname:'',
@@ -33,6 +37,10 @@ export class CartItemsComponent implements OnInit {
   totalprice: number = 1;
   quantity = 1;
 
+
+  
+
+  
   receivequantity($event: number) {  
     this.quantity = $event;  
     } 
@@ -55,6 +63,7 @@ export class CartItemsComponent implements OnInit {
     const a = this.cartData.reduce((sum: any, item: any) => sum + (item.price * item.quantity), intialValue);
     return a;
   }
+
   cart: CartItem[] = [];
 
   totalPrices(cart:CartItem){
@@ -73,12 +82,10 @@ export class CartItemsComponent implements OnInit {
     this.cartSvc.updateCart(this.carts).subscribe(
       ()=>console.log("update successfully")
  
-    
-      
     )
- 
-    this.ngOnInit();
   }
+      
+
 
   delete(deleteItem: CartItem) {
     this.cartSvc.removeItemFromCart(deleteItem).subscribe(
@@ -98,24 +105,23 @@ export class CartItemsComponent implements OnInit {
     })
     this.ngOnInit();
   }
+
   onClick(){
     this.router.navigate(['uniform'])
   }
 
   ngOnInit(): void {
+    
+    
     this.cartSvc.getCartItems().subscribe(
       (response) => {
         this.cart = response;
         console.log(this.cart);
       }
     )
+   
   }
-
-  
   // counterValue=this.cartData.reduce((item: any)=>(item.quantity));
-
-  countLessThenOne=true;
-  countMax=true;
 
   
   @Output() countEmmitter =new EventEmitter(); //4
@@ -126,35 +132,22 @@ export class CartItemsComponent implements OnInit {
 
   url: string = ""
   carturl = environment.cartapi;
+  // log() {
+    // var isAuthenticated = this.authService.authSubject.subscribe(
+    //   data => {
+    //     console.log('next subscribed value: ' + data);
+    //     this.isAuthenticated = data;
+    //   })
 
-  //increment and decrement 
+    // if (this.isAuthenticated == false) {
+    //   console.log('inside false ' + this.isAuthenticated);
+    //   this.router.navigate(['/login']);
+    //   return false;
+    // } else {
+    //   console.log('next subscribed value:t3etg ' + this.isAuthenticated);
+    //   //this.router.navigate(['/Home']);
+    //   return true;
+    // }
 
-  //Quantity -> 10
-  decrement(decrementitem : CartItem){
-
-    console.log("cart item in decrement" + decrementitem.quantity)
-    console.log("cart quantity :" +this.http.get(this.carturl + decrementitem.quantity))
-    if(true)
-    {
-      this.countLessThenOne=false;
-    }
-    else{
-      this.countLessThenOne=true;
-      this.carts.quantity--;
-    }
-    this.PostValue();
-  }
-
-  increment(){
-   if(this.carts.quantity==10){
-     this.countMax=false;
-   }
-   else{
-    this.carts.quantity++;
-    this.countLessThenOne=true;
-    this.countMax=false;
-    this.PostValue();
-   }
-  }
-
+  // }
 }

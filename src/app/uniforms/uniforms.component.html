@@ -85,7 +85,7 @@
     <div class="dropdown">
       <button class="dropbtn"
         style="padding: 30px ;">PRICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;BARND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;BRAND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GENDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRADE</button>
       <div class="dropdown-content">
@@ -96,49 +96,49 @@
       </div>
     </div>
   </div>
+
   <div class="row">
-    <div class="col-8"></div>
+    <div class="col-6">
+      <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd;">- 12 items</span>
+      </h4>
+    </div>
+    <div class="col-6">
+      <select class="mt-5" (change)='onOptionsSelected($event)' style="margin-left: 60%;">
+        <option value="org">Sort By:</option>
+        <option value="lth">Price : Low to High</option>
+        <option value="htl">Price : High to Low</option>
+        <option value="nasc">Name : Ascending Order</option>
+        <option value="ndesc">Name : Descending Order</option>
+      </select>
 
-    <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd">- 44 items</span>
-    </h4>
-    <h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
-  </div>
-  <div class="col-4">
-    <select (change)='onOptionsSelected($event)'>
-      <option>Sort By:</option>
-      <option value="lth">Price : Low to High</option>
-      <option value="htl">Price : High to Low</option>
-      <option value="nasc">Name : Ascending Order</option>
-      <option value="ndesc">Name : Descending Order</option>
-    </select>
-
-    <ul [ngSwitch]="optionSelected">
-      <li *ngSwitchCase="'lth'">
-        <app-lowtohigh></app-lowtohigh>
-      </li>
-      <li *ngSwitchCase="'htl'">
-        <!-- <app-b></app-b> -->
-      </li>
-      <li *ngSwitchCase="'nasc'">
-        <!-- <app-c></app-c> -->
-      </li>
-      <li *ngSwitchCase="'ndesc'">
-        <!-- <app-d></app-d> -->
-      </li>
-      <li *ngSwitchDefault></li>
-    </ul>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
     </div>
   </div>
+
+  <h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
 </div>
+<div class="row">
+  <ul [ngSwitch]="optionSelected">
+    <li *ngSwitchCase="'org'">
+    </li>
+    <li *ngSwitchCase="'lth'">
+      <app-lowtohigh></app-lowtohigh>
+    </li>
+    <li *ngSwitchCase="'htl'">
+      <app-hightolow></app-hightolow>
+    </li>
+    <li *ngSwitchCase="'nasc'">
+      <app-ascending></app-ascending>
+    </li>
+    <li *ngSwitchCase="'ndesc'">
+      <app-descending></app-descending>
+    </li>
+    <li *ngSwitchDefault></li>
+  </ul>
+</div>
+
+
+
+
 <div class="row" style="margin-top: 50px ;" *ngIf="!option">
   <div class="col">
     <a [routerLink]="['/nhis']">
@@ -310,3 +310,4 @@
     </a>
   </div>
 </div>
+<app-footer></app-footer>

@@ -28,26 +28,19 @@ i#arrow{
 i#arrow{
     
     transition: all 0.3s ease;
-    animation: block-link-arrow-down 1s infinite;
-    -webkit-animation: block-link-arrow-down 1s infinite;
-    -moz-animation: block-link-arrow-down 1s infinite;
+    animation: block-link-arrow-down 1.5s infinite;
+    -webkit-animation: block-link-arrow-down 1.5s infinite;
+    -moz-animation: block-link-arrow-down 1.5s infinite;
     display: inline-block;
     font-size: 16px;
 } @keyframes block-link-arrow-down {
-    0%, 25%, 55%, 75%, 100%
+    0%,100%
     {
-        transform: translateY(0);
+        transform: translatey(0);
     }
     45% 
     {
-        transform: translateY(-20px);
-    }
-    65% 
-    {
-        transform: translateY(-10px);
-    }85% 
-    {
-        transform: translateY(-5px);
+        transform: translatey(-20px);
     }
 }
 

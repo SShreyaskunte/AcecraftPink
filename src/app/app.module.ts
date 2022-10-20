@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import {CarouselModule} from 'primeng/carousel';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
@@ -43,6 +44,22 @@ import { AddressComponent } from './address/address.component';
 import { GetintouchComponent } from './enterprise/getintouch/getintouch.component';
 import { LowtohighComponent } from './lowtohigh/lowtohigh.component';
 import { HightolowComponent } from './hightolow/hightolow.component';
+import { FooterComponent } from './footer/footer.component';
+import { GetHelpComponent } from './get-help/get-help.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { AccOrderComponent } from './acc-order/acc-order.component';
+import { ProductionComponent } from './production/production.component';
+import { OthersComponent } from './others/others.component';
+import { ReturnsComponent } from './returns/returns.component';
+import { TermsComponent } from './terms/terms.component';
+import { PaymentsComponent } from './payments/payments.component';
+import { CareComponent } from './care/care.component';
+import { ShippingComponent } from './shipping/shipping.component';
+
+
+import { AscendingComponent } from './ascending/ascending.component';
+import { DescendingComponent } from './descending/descending.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 
@@ -87,7 +104,23 @@ import { HightolowComponent } from './hightolow/hightolow.component';
     AddressComponent,
     GetintouchComponent,
     LowtohighComponent,
-    HightolowComponent
+    HightolowComponent,
+    FooterComponent,
+    GetHelpComponent,
+    AboutUsComponent,
+    AccOrderComponent,
+    ProductionComponent,
+    OthersComponent,
+    ReturnsComponent,
+    TermsComponent,
+    PaymentsComponent,
+    CareComponent,
+    ShippingComponent,
+    LowtohighComponent,
+    HightolowComponent,
+    AscendingComponent,
+    DescendingComponent,
+    CarouselComponent
     
 
   ],
@@ -97,6 +130,7 @@ import { HightolowComponent } from './hightolow/hightolow.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CarouselModule
     
   ],
   providers: [],

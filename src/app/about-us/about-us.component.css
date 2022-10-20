@@ -1,0 +1,206 @@
+h1{
+    color: #978f8f;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.boxed h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #978f8f;
+}
+.about1 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.about3 .content div{
+    max-width: 310px;
+    margin: auto;
+    font-size: 18px;
+    color: #ada7a7;
+}
+.about1 {
+background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/About-us-1.jpg);
+background-size: cover;
+color: #978f8f;
+background-attachment: fixed;
+background-position: center 120px;
+}
+.about5 .container .content div, .about6 .container .content div {
+    font-size: 18px;
+    color: #ada7a7;
+}
+.row{
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.about2 {
+height: auto;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+.about2 .middleText {
+max-width: 500px;
+}
+.bg-grey {
+background-color: #dadada;
+}
+.about3 .container , .about4 .container {
+min-height: 100vh;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+.about4 .container {
+flex-wrap: wrap;
+}
+.about4 .container h1{
+flex-basis: 100%;
+}
+.about5, .about6 {
+background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/About-us-51.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.about6 {
+background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/About-us-61.jpg);
+}
+.about5 .container, .about6 .container {
+display: flex;
+align-items: center;
+min-height: 100vh;
+}
+.about5 .container .content, .about6 .container .content {
+max-width: 310px;
+margin: auto;
+}
+.team .first-row,.team .second-row, .team .third-row {
+margin-top: 20px;
+padding: 0 25px;
+}
+
+.boxed {
+    height: 150px;
+    background: grey;
+    width: 180px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0 20px;
+    text-align: center;
+}
+.boxed p {
+color: #ffffffab;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.boxed {
+width: 130px;
+height: 130px;
+padding: 5px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+.about1 {
+background-attachment: scroll;
+}
+}
+@media (min-width: 760px) and (max-width: 1024px) {
+.about5 .container .content {
+margin: 0 0 0 auto;
+}
+.about6 .container .content {
+margin: 0 auto 0 0;
+}
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+.about3 .container > div, .about4 .container > div {
+    padding: 10px;
+}
+.about1 {
+background-position: center;
+background-attachment: scroll;
+}
+.about3 .container{
+justify-content: center;
+min-height: 50vh;
+}
+.about4 .container {
+min-height: 30vh;
+justify-content: center;
+}
+.about4 .container h1 {
+order: 1;
+}
+.about4 .container > div {
+order: 3;
+}
+.about4 .container > div:last-child {
+order: 2;
+}
+.about5 {
+background-size: contain;
+background-position: center;
+}
+.about6 {
+    background-size: cover;
+    background-position: center;
+}
+.team .first-row {
+flex-direction: column;
+margin-top: 20px;
+align-items: center;
+}
+
+.boxed {
+width: 100%;
+margin: 20px 0 0;
+}
+.team .first-row, .team .second-row, .team .third-row {
+width: 100%;
+}
+.about5 .container {
+min-height: 50vh;
+}
+.about6 .container {
+min-height: 30vh;
+}
+}
+@media (min-width: 320px) and (max-width: 500px) {
+.about5 .container .content {
+max-width: 240px;
+    margin: 0 0 0 auto;
+}
+.about6 .container .content {
+max-width: 240px;
+    margin: 0 auto 0 0;
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+.about4 .container > div {
+    order: 2;
+}
+.about4 .container > div:last-child {
+    order: 3;
+}
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.proximaThin {
+    font-family: "proxima-thin";
+}

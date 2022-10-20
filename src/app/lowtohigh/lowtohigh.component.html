@@ -1,45 +1,131 @@
-<div class="row" style="margin-top: 50px ;">
-    <div class="col">
-      <a [routerLink]="['/nhis']">
-        <div class="card h-100 text-center  border-0">
-          <img
-            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
-            class="card-img-top text-center" alt="..." style="height: 400px ;">
-          <div class="card-body text-center">
+<style>
+    .dropbtn {
+      background-color: #f0f0f0;
+      color: rgb(0, 0, 0);
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   
-            <p class="card-text"><b>NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]</b></p>
+    }
+  
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    .dropdown-content pre {
+      color: black;
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s ease-in-out 0s,
+    }
+  
+    .dropdown-content pre:hover {
+      background-color: #ddd;
+      transition-delay: 0s, 0s, 0.3s;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+      transition-delay: 0s, 0s, 0.3s;
+    }
+  
+    /* .dropdown:hover .dropbtn {background-color: #5f5f5f;} */
+  </style>
+  
+  <div class="row" style="margin-top: 50px ;">
+      <div class="col">
+        <a [routerLink]="['/nhis']">
+          <div class="card h-100 text-center  border-0">
+            <img
+              src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
+              class="card-img-top text-center" alt="..." style="height: 400px ;">
+            <div class="card-body text-center">
+  
+              <p class="card-text"><b>NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]</b></p>
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
+      <div class="col">
+        <a [routerLink]="['/blue']">
+          <div class="card h-100  border-0">
+            <img
+              src="https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33874/images/5aa0f01491c2e5ab32f33875/5aa0f02091c2e5ab32f338b4/webp/5aa0f02091c2e5ab32f338b4-480x480.jpg"
+              class="card-img-top" alt="..." style="height: 400px ;">
+            <div class="card-body text-center">
   
-    <div class="col">
-      <a [routerLink]="['/cisroyal']">
-        <div class="card h-100  border-0">
-          <img
-            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
-            class="card-img-top" alt="..." style="height: 400px ; width: 400px ;">
-          <div class="card-body text-center">
-  
-            <p class="card-text text-center">
-              <b>CIS Royal Day Wear (Grade 1-5)</b>
-            </p>
+              <p class="card-text"><b>NHG Blue House Tshirt [Jal, Grade 1-10]</b></p>
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
-    <div class="col">
-      <a [routerLink]="['/nhg3']">
-        <div class="card h-100  border-0">
-          <img
-            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
-            class="card-img-top" alt="..." style="height: 400px ;width: 400px ;">
-          <div class="card-body text-center">
+        </a>
+      </div>
+      <div class="col">
+        <a [routerLink]="['/nhg3']">
+          <div class="card h-100  border-0">
+            <img
+              src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+              class="card-img-top" alt="..." style="height: 400px ;width: 400px ;">
+            <div class="card-body text-center">
   
-            <p class="card-text"><b>NHG Shirt [Girls, Grade 1-10]</b></p>
+              <p class="card-text"><b>NHG Shirt [Girls, Grade 1-10]</b></p>
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
   </div>
   
+  <div class="row">
+      <div class="col">
+        <a [routerLink]="['/yellow']">
+          <div class="card h-100  border-0">
+            <img
+              src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg"
+              class="card-img-top" alt="..." style="height: 400px ;">
+            <div class="card-body text-center">
+  
+              <p class="card-text"><b>CIS House T-Shirt (Yellow)</b></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a [routerLink]="['/cis7']">
+          <div class="card h-100  border-0">
+            <img
+              src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d708bcbfb666ae1149973/webp/cisb-shorts-480x480.jpg"
+              class="card-img-top" alt="..." style="height: 400px ; width: 400px ;">
+            <div class="card-body text-center">
+  
+              <p class="card-text"><b>CIS Day Wear Shorts</b></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a [routerLink]="['/cisroyal']">
+          <div class="card h-100  border-0">
+            <img
+              src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
+              class="card-img-top" alt="..." style="height: 400px ; width: 400px ;">
+            <div class="card-body text-center">
+  
+              <p class="card-text text-center">
+                <b>CIS Royal Day Wear (Grade 1-5)</b>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+  </div>
+   

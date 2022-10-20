@@ -126,7 +126,6 @@
                                 Get In Touch
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -134,119 +133,88 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-    <div class="modal-content">
-<div class="modal-header">
-        
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <h4 class="modal-title text-center" id="gridSystemModalLabel">Get your Uniforms designed and styled by Us!</h4>
-</div>
-<div class="modal-body">
-  <div ms-data-formname="contact" ms-data-buttonname="Submit" class="ng-scope ms-widget" data-ng-name="ms+++forms" ms-widgetname="ms.forms" data-ng-controller="ms_theme.controllers.ms+++forms" ms-widgetid="ms-widget-68" id="ms-widget-68">
-    <form name="contact" ng-submit="submit()" class="ng-pristine ng-valid">
-       <div class="ng-scope ms-widget" data-ng-name="ms+++th3+++form_layout1" ms-widgetname="ms.th3.form_layout1" data-ng-controller="ms_theme.controllers.ms+++th3+++form_layout1" ms-widgetid="ms-widget-69" id="ms-widget-69"><div class="row">
-    <div class="col-sm-12 ms-mt-m">
-        <!-- ngRepeat: field in fields --><div ng-repeat="field in fields" class="ng-scope">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fhead" style="font-family: Arial, Helvetica, sans-serif;">Get your Uniforms designed and styled by Us!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="orderFrom" (ngSubmit)="submitHandler()" style="padding: 10px ;">
+                    <div class="form-group">
+                        <div class="row d-flex">
+                            <div class="col-6 mb-2" >
+                                <label for="id" class="form-label"></label>
+                                <input type="text" id="text" name="text" class="form-control" formControlName="FirstName" placeholder="First Name">
+                                <!-- <label *ngIf="f['FirstName'].touched && f['FirstName'].invalid"></label> -->
+                                <label class="error ng-binding"
+                                    *ngIf=" submitted && f['FirstName'].errors?.['required']">First Name is
+                                    required</label>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <label for="id" class="form-label"></label>
+                                <input type="text" id="text" name="text" class="form-control" formControlName="LastName" placeholder="Last Name">
+                                <label class="error ng-binding"
+                                    *ngIf=" submitted && f['LastName'].errors?.['required']">Last Name is
+                                    required</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <label for="id" class="form-label"></label>
+                                <input type="text" id="text" name="text" class="form-control"
+                                    formControlName="Email" placeholder="Email">
+                                    <label class="error ng-binding"
+                                    *ngIf=" submitted && f['Email'].errors?.['required']">Email is
+                                    required</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <label for="id" class="form-label"></label>
+                                <input type="text" id="text" name="text" class="form-control"
+                                    formControlName="Organisation" placeholder="Organisation">
+                                    <label class="error ng-binding"
+                                    *ngIf=" submitted && f['Organisation'].errors?.['required']">Organisation is
+                                    required</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <label for="id" class="form-label"></label>
+                                <input type="phone" id="number" name="number" class="form-control"
+                                    formControlName="Phone" placeholder="Phone Number">
+                                    <label class="error ng-binding"
+                                    *ngIf=" submitted && f['Phone'].errors?.['required']">Phone is
+                                    required</label>
+                            </div>
+                        </div>
+                        <div class="row d-flex">
+                            <label for="" style="color: black;">Quantity is Required</label>
+                            <div class="col-12 mb-2">
+                            
 
-           
+                            </div>
 
-            <!-- ngIf: field.settings.display_type=='text' --><div class="form-group ng-scope icon-user" ng-if="field.settings.display_type=='text'">
-                <label for="name" class="ng-binding">First Name</label>
+                            <div class="col-12 mb-2" style="margin-top: -30px; left: -60px; color: #b3b3b3;">
+                                <label for="id" class="form-label" class="mt-5"></label>
+                                <input type="radio" id="radio" name="radio">&nbsp;10-50 Sets
+                                <label for="id" class="form-label" class="mt-5"></label>
+                                <input type="radio" id="radio" name="radio">&nbsp;51-100 Sets
 
-                <input type="text" ng-readonly="field.settings.read_only" class="form-control ng-pristine ng-valid ng-touched" id="name" ng-model="formData[field.name]" autocomplete="off" >
-                <label class="error ng-binding"></label>
-            </div><!-- end ngIf: field.settings.display_type=='text' -->
-
-           
-
-        </div><!-- end ngRepeat: field in fields --><div ng-repeat="field in fields" class="ng-scope">
-
-            
-            <!-- ngIf: field.settings.display_type=='text' --><div class="form-group ng-scope" ng-if="field.settings.display_type=='text'">
-                <label for="lastname" class="ng-binding">Last Name</label>
-
-                <input type="text" ng-readonly="field.settings.read_only" class="form-control ng-pristine ng-untouched ng-valid" id="lastname" ng-model="formData[field.name]" autocomplete="off">
-                <label class="error ng-binding"></label>
-            </div><!-- end ngIf: field.settings.display_type=='text' -->
-
-            
-        </div><!-- end ngRepeat: field in fields --><div ng-repeat="field in fields" class="ng-scope">
-
-            <!-- ngIf: field.settings.display_type=='captcha' -->
-
-            <!-- ngIf: field.settings.display_type=='email' --><div class="form-group ng-scope icon-email" ng-if="field.settings.display_type=='email'">
-                <label for="email" class="ng-binding">Professional Email</label>
-
-                <input type="text" ng-readonly="field.settings.read_only" class="form-control ng-pristine ng-untouched ng-valid" id="email" ng-model="formData[field.name]">
-                <label class="error ng-binding"></label>
-
-            </div><!-- end ngIf: field.settings.display_type=='email' -->
-           
-        </div><!-- end ngRepeat: field in fields --><div ng-repeat="field in fields" class="ng-scope">
-
-            
-
-            <!-- ngIf: field.settings.display_type=='text' --><div class="form-group ng-scope icon-company" ng-if="field.settings.display_type=='text'">
-                <label for="subject" class="ng-binding">Organisation</label>
-
-                <input type="text" ng-readonly="field.settings.read_only" class="form-control ng-pristine ng-untouched ng-valid" id="subject" ng-model="formData[field.name]" autocomplete="off">
-                <label class="error ng-binding"></label>
-            </div><!-- end ngIf: field.settings.display_type=='text' -->
-
-            
-
-        </div><!-- end ngRepeat: field in fields --><div ng-repeat="field in fields" class="ng-scope">
-
-            
-
-            <!-- ngIf: field.settings.display_type=='text' --><div class="form-group ng-scope icon-mobile" ng-if="field.settings.display_type=='text'">
-                <label for="phone" class="ng-binding">Phone No.</label>
-
-                <input type="text" ng-readonly="field.settings.read_only" class="form-control ng-pristine ng-untouched ng-valid" id="phone" ng-model="formData[field.name]" autocomplete="off">
-                <label class="error ng-binding"></label>
-            </div><!-- end ngIf: field.settings.display_type=='text' -->
-
-           
-        </div><!-- end ngRepeat: field in fields --><div ng-repeat="field in fields" class="ng-scope">
-
-            
-            <!-- ngIf: field.settings.display_type=='radio' --><div class="form-group ng-scope" ng-if="field.settings.display_type=='radio'">
-                <label for="sets" class="ng-binding">Quantity Required</label><br>
-                <!-- ngRepeat: option in field.settings.options --><label class="radio-inline ng-binding ng-scope" data-ng-repeat="option in field.settings.options">
-                    <input type="radio" ng-model="formData[field.name]" name="sets" id="sets" ng-value="option.value" class="ng-pristine ng-untouched ng-valid" value="10 - 50 Sets"> 10 - 50 Sets
-                </label><!-- end ngRepeat: option in field.settings.options --><label class="radio-inline ng-binding ng-scope" data-ng-repeat="option in field.settings.options">
-                    <input type="radio" ng-model="formData[field.name]" name="sets" id="sets" ng-value="option.value" class="ng-pristine ng-untouched ng-valid" value="51 - 100 Sets"> 51 - 100 Sets
-                </label><!-- end ngRepeat: option in field.settings.options --><label class="radio-inline ng-binding ng-scope" data-ng-repeat="option in field.settings.options">
-                    <input type="radio" ng-model="formData[field.name]" name="sets" id="sets" ng-value="option.value" class="ng-pristine ng-untouched ng-valid" value="100+ Sets"> 100+ Sets
-                </label><!-- end ngRepeat: option in field.settings.options -->
-                <label class="error ng-binding"></label>
-            </div><!-- end ngIf: field.settings.display_type=='radio' -->
-            
-
-        </div><!-- end ngRepeat: field in fields -->
-
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm-12 form-group">
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary ">Submit</button>
+                                <label for="id" class="form-label" class="mt-5"></label>
+                                <input type="radio" id="radio" name="radio">&nbsp;100+ Sets
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button class="btn btn-secondary" data-dismiss="modal"  type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div></div>
-    </form>
 </div>
-</div>
-    </div>
-  </div>
+<app-footer></app-footer>

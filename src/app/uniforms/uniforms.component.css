@@ -26,10 +26,21 @@ img{
 p{
     color:black;
     font-size: 14px;
+    margin-left: 50px ;
 }
 
 pre{
  
     font-weight: inherit;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+    color: black;
 }
