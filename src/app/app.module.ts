@@ -16,7 +16,6 @@ import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { OrderstatusComponent } from './orderstatus/orderstatus.component';
 import { AccountComponent } from './account/account.component';
-import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { AddressBookComponent } from './address-book/address-book.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
@@ -60,6 +59,8 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { AscendingComponent } from './ascending/ascending.component';
 import { DescendingComponent } from './descending/descending.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { LogoutComponent } from './logout/logout.component';
+import { PersonalInfoComponent } from './login/personal-info/personal-info.component';
 
 
 
@@ -120,7 +121,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     HightolowComponent,
     AscendingComponent,
     DescendingComponent,
-    CarouselComponent
+    CarouselComponent,
+    LogoutComponent,
     
 
   ],

@@ -9,7 +9,6 @@ import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { OrderstatusComponent } from './orderstatus/orderstatus.component';
 import { AccountComponent } from './account/account.component';
-import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { AddressBookComponent } from './address-book/address-book.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
@@ -47,6 +46,14 @@ import { DescendingComponent } from './descending/descending.component';
 import { AuthGuard } from './auth.guard';
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Carousel } from 'primeng/carousel';
+import { PaymentsComponent } from './payments/payments.component';
+import { ShippingComponent } from './shipping/shipping.component';
+import { OthersComponent } from './others/others.component';
+import { LogoutComponent } from './logout/logout.component';
+
+import { PersonalInfoComponent } from './login/personal-info/personal-info.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -91,8 +98,12 @@ const routes: Routes = [
   {path:'hightolow',component:HightolowComponent},
   {path:'ascending',component:AscendingComponent},
   {path:'descending',component:DescendingComponent},
-  {path:'carousel',component:CareComponent}
+  {path:'carousel',component:CarouselComponent},
 
+  {path:'payment',component:PaymentsComponent},
+  {path:'shipping',component:ShippingComponent},
+  {path:'others',component:OthersComponent},
+  {path:'logout',component:LogoutComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({

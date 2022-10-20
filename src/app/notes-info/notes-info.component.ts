@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-notes-info',
   templateUrl: './notes-info.component.html',
@@ -28,10 +29,22 @@ export class NotesInfoComponent implements OnInit {
 
   submitHandler(){
     console.log(this.submitForm.value)
-    alert("Thanks For Your Valuable Comment!!")
+    
    if(this.submitForm.value!=0){
      this.count++;
    } 
+   const Toast = Swal.mixin({
+    toast: true,
+    position: 'top',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: false,
+  })
+
+  Toast.fire({
+    icon: 'success',
+    title: 'Thank For Your Feedback'
+  })
     
   }
 

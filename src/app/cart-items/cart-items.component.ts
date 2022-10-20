@@ -5,9 +5,8 @@ import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
-// import { Observable } from 'rxjs';
-// import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { UserServiceService } from '../user-service.service';
+
 
 
 
@@ -16,16 +15,15 @@ import { UserServiceService } from '../user-service.service';
   templateUrl: './cart-items.component.html',
   styleUrls: ['./cart-items.component.css']
 })
-export class CartItemsComponent implements OnInit{
-  isAuthenticated: boolean = false;
+export class CartItemsComponent implements OnInit {
 
-  constructor(private cartSvc: CartItemService,private http : HttpClient, private router:Router, private authService: UserServiceService,) { this.url = this.carturl + "/"; }
+  constructor(private cartSvc: CartItemService,private authService:UserServiceService,private http : HttpClient, private router:Router) { this.url = this.carturl + "/"; }
   carts:CartItem={
     id:0,
     pname:'',
     // product_code:'',
     // pdesc:'',
-    price:1,
+    price:0,
     size:1,
     // length:1,
     // waist:1,
@@ -34,27 +32,17 @@ export class CartItemsComponent implements OnInit{
     totalPrice:1    
   }
   cartData: any = [];
-  totalprice: number = 1;
-  quantity = 1;
+  totalprice: number = 0;
+  quantity: number = 1;
 
-
-  
-
-  
   receivequantity($event: number) {  
     this.quantity = $event;  
-    } 
-  //  totalPrices(data:any) {
-  //    debugger  
-  //        this.totalprice=0;
-  //       this.cartData=data    
-  //        console.log(this.cartData);  
-  //       for(let j=0;j<data.length;j++){   
-  //       this.totalprice+= (this.cartData[j].price +this.cartData[j].quantity )
-  //             console.log(this.cartData[j].quantity)  
-  //        }  
-  //        return this.totalprice;
-  //  }
+    }
+
+    totalPrices(cart:CartItem){
+      this.carts.totalPrice = cart.quantity * cart.price;
+      return this.carts.totalPrice;
+    }
 
   totalPrice(data: any) {
     debugger
@@ -66,26 +54,27 @@ export class CartItemsComponent implements OnInit{
 
   cart: CartItem[] = [];
 
-  totalPrices(cart:CartItem){
-    this.carts.totalPrice = cart.quantity * cart.price;
-    return this.carts.totalPrice;
-  }
   updateToCart(cart:CartItem){
     console.log(this.quantity)
-
     this.carts.id=cart.id;
-  
    this.carts.totalPrice=(cart.price * this.quantity);
-  
     this.carts.quantity=this.quantity;
-  
     this.cartSvc.updateCart(this.carts).subscribe(
       ()=>console.log("update successfully")
- 
-    )
-  }
-      
+    );const Toast = Swal.mixin({
+      toast: true,
+      position: 'top',
+      showConfirmButton: false,
+      timer: 3000,
+    })
 
+    Toast.fire({
+      icon: 'success',
+      title: 'Item Updated successfully'
+    })
+ 
+    this.ngOnInit();
+  }
 
   delete(deleteItem: CartItem) {
     this.cartSvc.removeItemFromCart(deleteItem).subscribe(
@@ -109,18 +98,25 @@ export class CartItemsComponent implements OnInit{
   onClick(){
     this.router.navigate(['uniform'])
   }
+  isAuthenticated: boolean = true;
 
   ngOnInit(): void {
-    
-    
+    console.log("inside onint")
     this.cartSvc.getCartItems().subscribe(
       (response) => {
         this.cart = response;
         console.log(this.cart);
       }
-    )
-   
-  }
+    );
+    this.authService.authSubject.subscribe(
+      data => 
+      {
+        console.log('auth inside nav component: ' + data);
+        this.isAuthenticated = data;
+      }
+    );
+
+}
   // counterValue=this.cartData.reduce((item: any)=>(item.quantity));
 
   
@@ -132,22 +128,19 @@ export class CartItemsComponent implements OnInit{
 
   url: string = ""
   carturl = environment.cartapi;
-  // log() {
-    // var isAuthenticated = this.authService.authSubject.subscribe(
-    //   data => {
-    //     console.log('next subscribed value: ' + data);
-    //     this.isAuthenticated = data;
-    //   })
 
-    // if (this.isAuthenticated == false) {
-    //   console.log('inside false ' + this.isAuthenticated);
-    //   this.router.navigate(['/login']);
-    //   return false;
-    // } else {
-    //   console.log('next subscribed value:t3etg ' + this.isAuthenticated);
-    //   //this.router.navigate(['/Home']);
-    //   return true;
-    // }
-
+  // isloggedin()
+  // {
+   
+  //   if(this.isAuthenticated == true)
+  //   {
+  //     console.log("In islogged in ?"+this.isAuthenticated);
+  //     this.router.navigate(['https://rzp.io/i/G6v9RUHFt5']);
+  //   }
+  //   else
+  //   {
+  //     console.log("In islogged in ?"+this.isAuthenticated);
+  //     this.router.navigate(['/login']);
+  //   }
   // }
 }

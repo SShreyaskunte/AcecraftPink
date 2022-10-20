@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder} from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 import { HttpClient } from '@angular/common/http';
 import { UserServiceService } from '../user-service.service';
 import { environment } from 'src/environments/environment';
+import { outputAst } from '@angular/compiler';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
 userapi=environment.userapi;
   public loginForm!:FormGroup
   submitted = false;
+  event: any;
 get f() { return this.loginForm.controls; }
 
   constructor(private formBuilder:FormBuilder,private router:Router, private http:HttpClient, private userService: UserServiceService) { }
@@ -29,7 +31,9 @@ get f() { return this.loginForm.controls; }
       useremail: ['', [Validators.required, Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
       password: ['', [Validators.required, Validators.minLength(6)]]
         });
+
   }
+  
   login(){
     this.submitted = true;
     if (this.loginForm.invalid) {

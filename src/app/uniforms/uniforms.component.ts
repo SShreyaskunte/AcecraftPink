@@ -51,7 +51,7 @@ onOptionsSelected(event: any){
     this.option = true;
 }
  
-
+ 
   // detailview(detailviewProd: (string | undefined)[])
   // {
   //   this.detail.id=detailviewProd[0];

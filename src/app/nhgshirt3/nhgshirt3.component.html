@@ -17,7 +17,7 @@
             <p><strong style="font-size:40px ;">₹355</strong>&nbsp;<del>₹535</del></p>
             <p style="background-color: black; color:white; width: 85px ; margin-left: 40px; padding:10px ;">34% OFF</p>
             <hr>
-            <button class="btn btn-dark" onclick="child()">SIZE GUIDE</button>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#sizeModal">SIZE GUIDE</button>
             <br><br><br>
             <label style="background-color: black; color:white; height: 25px ; width: 80px; text-align: center;"> <p>Size</p></label>
             <select class="dropdown" [(ngModel)]="size">
@@ -37,7 +37,7 @@
             </div>
             <br><br><br>
         <button class="btn btn-dark" (click)="addToCart(['3','NHG Shirt [Girls, Grade 1-10]','size','355','https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg','quantity'])" >Add to Cart</button> &nbsp;&nbsp;
-        <button class="btn btn-dark">Buy Now</button>
+        <button class="btn btn-dark"  (click)="addToCart(['3','NHG Shirt [Girls, Grade 1-10]','size','355','https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg','quantity'])" >Buy Now</button>
         <br><br>
         </div>
     <div class="col-1">
@@ -57,50 +57,23 @@
         </div>
 
     <div class="col-1"></div>
-    <div class="col-10">
-            <div style="background-color: rgb(239, 239, 239) ;height: 40px; padding: 10px;">
-                <p> <strong>Related products</strong>
-                </p>
-            </div> 
-            <div class="row" style="padding: 40px ;">
-                <div class="card border-0" style="width:230px;">
-                    <img class="card-img-top" src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                      <p class="card-text" style="margin-top: 20px ;">NHG Shirt [Girls, Grade 1-10]</p>
-                    </div>
-                  </div>
-                  <div class="card border-0" style="width:230px">
-                    <img class="card-img-top" src="https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                      <p class="card-text" style="margin-top: 45px ;"> CIS Sky Day Wear (Grade 6-8)</p>
-                    </div>
-                  </div>
-                  <div class="card border-0" style="width:230px">
-                    <img class="card-img-top" src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                      <p class="card-text" style="margin-top: 15px ;">CIS House T-Shirt (Yellow)</p>
-                    </div>
-                  </div>
-                  <div class="card border-0" style="width:230px">
-                    <img class="card-img-top" src="https://cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33832/images/5aa0f01491c2e5ab32f33833/5aa0f01e91c2e5ab32f338a1/webp/5aa0f01e91c2e5ab32f338a1-640x640.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                      <p class="card-text">CIS Zippers (Grade 1-12)</p>
-                    </div>
-                  </div>
-            </div>
-    </div>
-    <div class="col-1"></div>
+   
+    <app-carousel></app-carousel>
 
 <app-footer></app-footer>
-<script>
-  document.addEventListener('DOMContentLoaded', () =>
-  {
-    document.getElementById('size').addEventListener('input', handleSelect);
-  });
-
-function handleSelect()
-{
-  let select = ev.target;
-  console.log(select.value);
-}
-  </script>
+    <div class="modal fade" id="sizeModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Size Guide</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <img style="width: 90%; height:450px" ng-if=" product.metafields.size_chart" ms-data-valign="middle" ms-data-halign="center" class="ms-w-full img-responsive ng-scope" ms-data-placeholder-html="<div class=&quot;img-place-holder&quot;><table><tr><td>Name:size_chart<br> Ratio : 2:1</td></tr></table></div>" ms-data-aspect-ratio="1:1" ng-src="//cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.size_charts/5aa7e7d74bf31edb65fee72d/webp/5aa7e7ca4a34c6db5f233a88-1024x1024.jpg" alt="SIZE GUIDE" src="//cdn3.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.size_charts/5aa7e7d74bf31edb65fee72d/webp/5aa7e7ca4a34c6db5f233a88-1024x1024.jpg">        </div>
+      </div>
+    </div>
+    

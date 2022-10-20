@@ -42,9 +42,6 @@ export class CartItemService {
 
     });
   }
-  emptyCart() {
-
-  }
   public countSubject = new Subject<number>();
 
   getCount() {

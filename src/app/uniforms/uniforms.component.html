@@ -1,6 +1,6 @@
 <style>
   .dropbtn {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 16px;
     font-size: 16px;
@@ -17,7 +17,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -81,7 +81,7 @@
 
 <div class="row">
   <div class="col-1"></div>
-  <div class="col-10" style="text-align:center ; margin-top: 20px;margin-left: 90px ;">
+  <div class="col-10" style="text-align:center ; margin-top: 20px;margin-left: 50px ;">
     <div class="dropdown">
       <button class="dropbtn"
         style="padding: 30px ;">PRICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -96,24 +96,33 @@
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-6">
-      <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd;">- 12 items</span>
-      </h4>
+  <div class="col-1"></div>
+<div class="row">
+<div class="col-6">
+  <h4 style="margin: 30px 0px 10px 90px ;">SCHOOL <span style="font-size: 20px; color:#ddd;">- 12 items</span>
+  </h4>
+</div>
+<div class="col-6">
+  <!-- <div class="dropdown" style="margin-left:450px; margin-top: 20px; background-color: white;" >
+    <button class="dropbtn">Sort By</button>
+    <div class="dropdown-content">
+      <ul>
+        <li> <a [routerLink]="['/lowtohigh']" style="color: black;" >Low to high</a></li>
+        <li> <a [routerLink]="['/hightolow']" style="color: black;">High to Low</a></li>
+        <li> <a [routerLink]="['/ascending']" style="color: black;">Ascending</a></li>
+        <li> <a [routerLink]="['/descending']" style="color: black;">Descending</a></li>
+      </ul>
     </div>
-    <div class="col-6">
-      <select class="mt-5" (change)='onOptionsSelected($event)' style="margin-left: 60%;">
-        <option value="org">Sort By:</option>
-        <option value="lth">Price : Low to High</option>
-        <option value="htl">Price : High to Low</option>
-        <option value="nasc">Name : Ascending Order</option>
-        <option value="ndesc">Name : Descending Order</option>
-      </select>
-
-    </div>
-  </div>
-
+  </div> -->
+  <select class="mt-5" (change)='onOptionsSelected($event)' style="margin-left: 60%;">
+    <option value="org" style="font-family:'Times New Roman', Times, serif ;" >Sort By:</option>
+    <option value="lth" style="font-family:'Times New Roman', Times, serif ;">Price : Low to High</option>
+    <option value="htl" style="font-family:'Times New Roman', Times, serif ;">Price : High to Low</option>
+    <option value="nasc" style="font-family:'Times New Roman', Times, serif ;">Name : Ascending Order</option>
+    <option value="ndesc" style="font-family:'Times New Roman', Times, serif ;">Name : Descending Order</option>
+  </select>
+</div>
+</div>
   <h4 style="margin: 30px 0px 0px 90px ;">NEW HORIZON GURUKUL</h4>
 </div>
 <div class="row">
@@ -135,54 +144,50 @@
     <li *ngSwitchDefault></li>
   </ul>
 </div>
+  <div class="row" *ngIf="!option" style="margin-top: 50px ;">
+    <div class="col">
+      <a [routerLink]="['/nhis']">
+        <div class="card h-100 text-center  border-0">
+          <img
+            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
+            class="card-img-top text-center" alt="..." style="height: 400px ;">
+          <div class="card-body text-center">
 
-
-
-
-<div class="row" style="margin-top: 50px ;" *ngIf="!option">
-  <div class="col">
-    <a [routerLink]="['/nhis']">
-      <div class="card h-100 text-center  border-0">
-        <img
-          src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
-          class="card-img-top text-center" alt="..." style="height: 400px ;">
-        <div class="card-body text-center">
-
-          <p class="card-text"><b>NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]</b></p>
+            <p class="card-text"><b>NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]</b></p>
+          </div>
         </div>
-      </div>
-    </a>
-  </div>
+      </a>
+    </div>
 
-  <div class="col">
-    <a [routerLink]="['/cisroyal']">
-      <div class="card h-100  border-0">
-        <img
-          src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
-          class="card-img-top" alt="..." style="height: 400px ; width: 400px ;">
-        <div class="card-body text-center">
+    <div class="col">
+      <a [routerLink]="['/cisroyal']">
+        <div class="card h-100  border-0">
+          <img
+            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
+            class="card-img-top" alt="..." style="height: 400px ; width: 400px ;">
+          <div class="card-body text-center">
 
-          <p class="card-text text-center">
-            <b>CIS Royal Day Wear (Grade 1-5)</b>
-          </p>
+            <p class="card-text text-center">
+              <b>CIS Royal Day Wear (Grade 1-5)</b>
+            </p>
+          </div>
         </div>
-      </div>
-    </a>
-  </div>
-  <div class="col">
-    <a [routerLink]="['/nhg3']">
-      <div class="card h-100  border-0">
-        <img
-          src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
-          class="card-img-top" alt="..." style="height: 400px ;width: 400px ;">
-        <div class="card-body text-center">
+      </a>
+    </div>
+    <div class="col">
+      <a [routerLink]="['/nhg3']">
+        <div class="card h-100  border-0">
+          <img
+            src="https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+            class="card-img-top" alt="..." style="height: 400px ;width: 400px ;">
+          <div class="card-body text-center">
 
-          <p class="card-text"><b>NHG Shirt [Girls, Grade 1-10]</b></p>
+            <p class="card-text"><b>NHG Shirt [Girls, Grade 1-10]</b></p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
-</div>
 
 <div class="row" *ngIf="!option">
   <div class="col">

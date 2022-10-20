@@ -60,12 +60,13 @@
   ],
   "cart": [
     {
-      "id": "2",
-      "pname": "CIS Royal Day Wear (Grade 1-5)",
-      "size": "22",
-      "price": "450",
-      "pimage": "https://cdn1.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
-      "quantity": 2
+      "id": "12",
+      "pname": "NHIS Blue Henley Polo [Boys & Girls, Chalukya, Nursery-Grade 5]",
+      "size": "26",
+      "price": "340",
+      "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33874/images/5aa0f01491c2e5ab32f33875/5aa0f02091c2e5ab32f338b4/webp/5aa0f02091c2e5ab32f338b4-480x480.jpg",
+      "quantity": 3,
+      "totalPrice": 1020
     }
   ],
   "productdetail": [
@@ -107,7 +108,8 @@
       "size": "24",
       "price": "500",
       "pimage": "https://cdn2.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg",
-      "quantity": 4
+      "quantity": 4,
+      "totalPrice": 900
     }
   ],
   "products": [
@@ -159,7 +161,7 @@
     },
     {
       "id": 2,
-      "sname": "Shreyas",
+      "sname": "Shreyas Kunte",
       "contact": 9876545676,
       "address": "Theerthalli, Shivamogga-57004"
     },
