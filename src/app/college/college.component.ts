@@ -38,6 +38,7 @@ export class CollegeComponent implements OnInit {
       return;
     }
     console.log(this.orderFrom.value)
+    
     alert("Product added sucessfully.Thank you");
   }
 }

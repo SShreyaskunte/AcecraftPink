@@ -5,7 +5,8 @@
 </div>-->
 <div class="container-fluid">
     <div class="container"> 
-        <span *ngIf="totalPrice(cart)===0"><h1>Cart Is Empty</h1>
+        <span *ngIf="totalPrice(cart)===0">
+            <img src="https://nexispro.com/wp-content/uploads/2020/09/empty-cart.jpg" alt="">
             <a class="btn btn-outline-dark m-3" (click)="onClick()">Continue Shopping</a></span>
        <h1 *ngIf="totalPrice(cart) !=0">Your bag total is {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1>
        <hr>
@@ -61,8 +62,14 @@
                    <h3>{{totalPrice(cart)|currency:'INR'}}</h3>
                    <div style="justify-content: right;">
                     <a class="btn btn-outline-dark m-3" [routerLink]="['/uniform']">Continue Shopping</a>
-                    <a class="btn btn-outline-dark m-3" href="https://rzp.io/i/G6v9RUHFt5" target="_blank">Place Order</a>
-               
+                    <button class="btn btn-outline-dark m-3" [routerLink]="['/logout']" >Place Order</button>
+
+                    <!-- <ul [ngSwitch]="">
+                        <li *ngSwitchCase="true"><a  class="btn btn-outline-dark m-3"  href="https://rzp.io/i/G6v9RUHFt5">Place order {{authorize}}</a></li>
+                        <li *ngSwitchCase="false"><a  class="btn btn-outline-dark m-3" [routerLink]="['/login']">Login to Place order {{authorize}} </a></li>
+                        <li *ngSwitchDefault></li>
+                      </ul> -->
+
                </div>
            </div>
        </div>

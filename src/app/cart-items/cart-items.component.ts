@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
+import { UserServiceService } from '../user-service.service';
+
 
 
 
@@ -15,7 +17,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CartItemsComponent implements OnInit {
 
-  constructor(private cartSvc: CartItemService,private http : HttpClient, private router:Router) { this.url = this.carturl + "/"; }
+  constructor(private cartSvc: CartItemService,private authService:UserServiceService,private http : HttpClient, private router:Router) { this.url = this.carturl + "/"; }
   carts:CartItem={
     id:0,
     pname:'',
@@ -59,7 +61,17 @@ export class CartItemsComponent implements OnInit {
     this.carts.quantity=this.quantity;
     this.cartSvc.updateCart(this.carts).subscribe(
       ()=>console.log("update successfully")
-    )
+    );const Toast = Swal.mixin({
+      toast: true,
+      position: 'top',
+      showConfirmButton: false,
+      timer: 3000,
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Item Updated successfully'
+    })
  
     this.ngOnInit();
   }
@@ -84,17 +96,27 @@ export class CartItemsComponent implements OnInit {
   }
 
   onClick(){
-    this.router.navigate(['allproducts'])
+    this.router.navigate(['uniform'])
   }
+  isAuthenticated: boolean = true;
 
   ngOnInit(): void {
+    console.log("inside onint")
     this.cartSvc.getCartItems().subscribe(
       (response) => {
         this.cart = response;
         console.log(this.cart);
       }
-    )
-  }
+    );
+    this.authService.authSubject.subscribe(
+      data => 
+      {
+        console.log('auth inside nav component: ' + data);
+        this.isAuthenticated = data;
+      }
+    );
+
+}
   // counterValue=this.cartData.reduce((item: any)=>(item.quantity));
 
   
@@ -106,4 +128,19 @@ export class CartItemsComponent implements OnInit {
 
   url: string = ""
   carturl = environment.cartapi;
+
+  // isloggedin()
+  // {
+   
+  //   if(this.isAuthenticated == true)
+  //   {
+  //     console.log("In islogged in ?"+this.isAuthenticated);
+  //     this.router.navigate(['https://rzp.io/i/G6v9RUHFt5']);
+  //   }
+  //   else
+  //   {
+  //     console.log("In islogged in ?"+this.isAuthenticated);
+  //     this.router.navigate(['/login']);
+  //   }
+  // }
 }

@@ -56,6 +56,7 @@ import { LowtohighComponent } from './lowtohigh/lowtohigh.component';
 import { HightolowComponent } from './hightolow/hightolow.component';
 import { AscendingComponent } from './ascending/ascending.component';
 import { DescendingComponent } from './descending/descending.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -113,7 +114,8 @@ import { DescendingComponent } from './descending/descending.component';
     LowtohighComponent,
     HightolowComponent,
     AscendingComponent,
-    DescendingComponent
+    DescendingComponent,
+    LogoutComponent
     
 
   ],
