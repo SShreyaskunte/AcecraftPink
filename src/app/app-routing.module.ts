@@ -9,7 +9,6 @@ import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { OrderstatusComponent } from './orderstatus/orderstatus.component';
 import { AccountComponent } from './account/account.component';
-import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { AddressBookComponent } from './address-book/address-book.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { WalletComponent } from './wallet/wallet.component';
@@ -49,6 +48,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { OthersComponent } from './others/others.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AuthGuard } from './auth.guard';
+import { PersonalInfoComponent } from './login/personal-info/personal-info.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -96,7 +96,7 @@ const routes: Routes = [
   {path:'payment',component:PaymentsComponent},
   {path:'shipping',component:ShippingComponent},
   {path:'others',component:OthersComponent},
-  {path:'logout',component:LogoutComponent, canActivate:[AuthGuard]}
+  {path:'logout',component:LogoutComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({

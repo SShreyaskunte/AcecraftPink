@@ -58,9 +58,6 @@ export class CartItemService {
 
     });
   }
-  emptyCart() {
-
-  }
   public countSubject = new Subject<number>();
   getCount() {
     return this.getCartItems().subscribe(res => {
