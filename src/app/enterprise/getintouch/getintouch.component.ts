@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-getintouch',
@@ -9,6 +10,8 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class GetintouchComponent implements OnInit {
 
 submitted = false;
+// first:string =""
+// last:string =""
   //orderFrom: FormGroup;
 
   constructor(private formbuilder:FormBuilder) {
@@ -39,9 +42,20 @@ submitted = false;
     if (this.orderFrom.invalid) {
       return;
     }
-    console.log(this.orderFrom.value)
-    alert("Product added sucessfully.Thank you");
-    alert("Thank You For Contacting Us..");
+    console.log(this.orderFrom.value);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: false,
+    })
+  
+    Toast.fire({
+      icon: 'success',
+      title: 'Thank You For Getting In Touch With Us'
+    })
+      
+    }
   }
 
-}

@@ -19,6 +19,8 @@ export class NHTrousersComponent implements OnInit {
     id:0,
     pname:'',
     size:0,
+    // length:0,
+    // waist:0,
     price:0,
     pimage:'',
     quantity:1,
@@ -30,7 +32,9 @@ export class NHTrousersComponent implements OnInit {
   }
 
   quantity:number=1;
-  size:number= 1;
+  size:number=1;
+  // length:number= 1;
+  // waist:number=1;
 
   addToCart(addtocartProd: (string | undefined)[]){
     this.cart.id=addtocartProd[0];
@@ -38,6 +42,8 @@ export class NHTrousersComponent implements OnInit {
     this.cart.price=addtocartProd[3];
     this.cart.pimage=addtocartProd[4];
     this.cart.size=this.size;
+    // this.cart.length=this.length;
+    // this.cart.waist=this.waist;
     this.cart.totalPrice=addtocartProd[6];
     this.cart.quantity=this.quantity;
     this.cartsvc.addToCart(this.cart);
@@ -67,6 +73,34 @@ export class NHTrousersComponent implements OnInit {
     {name: '28'},
     {name: '30'},
     {name: '32'}
+  ];
+
+  lengths= [
+    {name: '22'},
+    {name: '24'},
+    {name: '26'},
+    {name: '28'},
+    {name: '30'},
+    {name: '32'},
+    {name: '34'},
+    {name: '36'},
+    {name: '38'},
+    {name: '40'},
+    {name: '42'}
+    
+  ];
+  waists= [
+    {name: '24'},
+    {name: '26'},
+    {name: '28'},
+    {name: '30'},
+    {name: '32'},
+    {name: '34'},
+    {name: '36'},
+    {name: '40'},
+    {name: '42'},
+    {name: '44'}
+   
   ];
 
 }
